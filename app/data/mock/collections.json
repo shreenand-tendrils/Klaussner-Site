@@ -1,0 +1,74 @@
+[
+ {
+  "handle": "living-room",
+  "title": "Living Room",
+  "description": "Sofas, sectionals and accent seating for gathering well.",
+  "image": "https://picsum.photos/seed/lr/1200/900"
+ },
+ {
+  "handle": "living-room-sets",
+  "title": "Living Room Sets",
+  "description": "Coordinated sets, designed to live together.",
+  "image": "https://picsum.photos/seed/lrs/1200/900"
+ },
+ {
+  "handle": "bedroom",
+  "title": "Bedroom",
+  "description": "Beds and storage for a quieter room.",
+  "image": "https://picsum.photos/seed/br/1200/900"
+ },
+ {
+  "handle": "dining-rooms",
+  "title": "Dining Rooms",
+  "description": "Tables and seating for long evenings.",
+  "image": "https://picsum.photos/seed/dr/1200/900"
+ },
+ {
+  "handle": "recliners",
+  "title": "Recliners",
+  "description": "Comfort engineered into refined silhouettes.",
+  "image": "https://picsum.photos/seed/rc/1200/900"
+ },
+ {
+  "handle": "sleeper-sofas",
+  "title": "Sleeper Sofas",
+  "description": "Everyday seating that becomes a guest bed.",
+  "image": "https://picsum.photos/seed/ss/1200/900"
+ },
+ {
+  "handle": "series",
+  "title": "Series",
+  "description": "Explore our signature collections.",
+  "image": "https://picsum.photos/seed/se/1200/900"
+ },
+ {
+  "handle": "sale",
+  "title": "Sale",
+  "description": "Selected pieces at special prices.",
+  "image": "https://picsum.photos/seed/sa/1200/900"
+ },
+ {
+  "handle": "sofas",
+  "title": "Sofas",
+  "description": "Sofas built for everyday living.",
+  "image": "https://picsum.photos/seed/sofas/1200/900"
+ },
+ {
+  "handle": "1-seater-sofa",
+  "title": "1 Seater Sofa",
+  "description": "1 Seater Sofa built for everyday living.",
+  "image": "https://picsum.photos/seed/1-seater-sofa/1200/900"
+ },
+ {
+  "handle": "3-seater-sofa",
+  "title": "3 Seater Sofa",
+  "description": "3 Seater Sofa built for everyday living.",
+  "image": "https://picsum.photos/seed/3-seater-sofa/1200/900"
+ },
+ {
+  "handle": "sectionals",
+  "title": "Sectionals",
+  "description": "Sectionals built for everyday living.",
+  "image": "https://picsum.photos/seed/sectionals/1200/900"
+ }
+]

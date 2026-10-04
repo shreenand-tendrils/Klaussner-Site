@@ -1,0 +1,145 @@
+[
+ {
+  "id": "m-living-room",
+  "title": "Living Room",
+  "type": "COLLECTION",
+  "url": "/collections/living-room",
+  "resource": {
+   "__typename": "Collection",
+   "handle": "living-room",
+   "image": {
+    "url": "https://picsum.photos/seed/lr/1200/900"
+   }
+  },
+  "items": [
+   {
+    "id": "m-sofas",
+    "title": "Sofas",
+    "type": "COLLECTION",
+    "url": "/collections/sofas",
+    "resource": {
+     "__typename": "Collection",
+     "handle": "sofas"
+    },
+    "items": [
+     {
+      "id": "m-1-seater-sofa",
+      "title": "1 Seater Sofa",
+      "type": "COLLECTION",
+      "url": "/collections/1-seater-sofa",
+      "resource": {
+       "__typename": "Collection",
+       "handle": "1-seater-sofa"
+      },
+      "items": []
+     },
+     {
+      "id": "m-3-seater-sofa",
+      "title": "3 Seater Sofa",
+      "type": "COLLECTION",
+      "url": "/collections/3-seater-sofa",
+      "resource": {
+       "__typename": "Collection",
+       "handle": "3-seater-sofa"
+      },
+      "items": []
+     },
+     {
+      "id": "m-sectionals",
+      "title": "Sectionals",
+      "type": "COLLECTION",
+      "url": "/collections/sectionals",
+      "resource": {
+       "__typename": "Collection",
+       "handle": "sectionals"
+      },
+      "items": []
+     }
+    ]
+   },
+   {
+    "id": "m-living-room-sets",
+    "title": "Living Room Sets",
+    "type": "COLLECTION",
+    "url": "/collections/living-room-sets",
+    "resource": {
+     "__typename": "Collection",
+     "handle": "living-room-sets"
+    },
+    "items": []
+   },
+   {
+    "id": "m-recliners",
+    "title": "Recliners",
+    "type": "COLLECTION",
+    "url": "/collections/recliners",
+    "resource": {
+     "__typename": "Collection",
+     "handle": "recliners"
+    },
+    "items": []
+   },
+   {
+    "id": "m-sleeper-sofas",
+    "title": "Sleeper Sofas",
+    "type": "COLLECTION",
+    "url": "/collections/sleeper-sofas",
+    "resource": {
+     "__typename": "Collection",
+     "handle": "sleeper-sofas"
+    },
+    "items": []
+   }
+  ]
+ },
+ {
+  "id": "m-bedroom",
+  "title": "Bedroom",
+  "type": "COLLECTION",
+  "url": "/collections/bedroom",
+  "resource": {
+   "__typename": "Collection",
+   "handle": "bedroom",
+   "image": {
+    "url": "https://picsum.photos/seed/br/1200/900"
+   }
+  },
+  "items": []
+ },
+ {
+  "id": "m-dining-rooms",
+  "title": "Dining Rooms",
+  "type": "COLLECTION",
+  "url": "/collections/dining-rooms",
+  "resource": {
+   "__typename": "Collection",
+   "handle": "dining-rooms",
+   "image": {
+    "url": "https://picsum.photos/seed/dr/1200/900"
+   }
+  },
+  "items": []
+ },
+ {
+  "id": "m-series",
+  "title": "Series",
+  "type": "COLLECTION",
+  "url": "/collections/series",
+  "resource": {
+   "__typename": "Collection",
+   "handle": "series"
+  },
+  "items": []
+ },
+ {
+  "id": "m-sale",
+  "title": "Sale",
+  "type": "COLLECTION",
+  "url": "/collections/sale",
+  "resource": {
+   "__typename": "Collection",
+   "handle": "sale"
+  },
+  "items": []
+ }
+]

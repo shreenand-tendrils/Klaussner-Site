@@ -1,0 +1,925 @@
+[
+  {
+    "id": "gid://shopify/Product/1001",
+    "handle": "harlow-sofa",
+    "title": "Harlow Sofa",
+    "vendor": "Klaussner",
+    "productType": "Sofa",
+    "description": "A deep, low-profile sofa with feather-wrapped cushions and a hand-tailored frame.",
+    "tags": ["sofa", "living room", "3 seater", "upholstered", "featured"],
+    "collections": ["living-room", "living-room-sets", "sofas", "3-seater-sofa", "featured", "sale"],
+    "availableForSale": true,
+    "price": {"amount": "1899.00", "currencyCode": "USD"},
+    "compareAtPrice": {"amount": "2199.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/harlow1/1600/1200", "alt": "Harlow Sofa front view", "width": 1600, "height": 1200},
+      {"url": "https://picsum.photos/seed/harlow2/1600/1200", "alt": "Harlow Sofa detail", "width": 1600, "height": 1200},
+      {"url": "https://picsum.photos/seed/harlow3/1600/1200", "alt": "Harlow Sofa side view", "width": 1600, "height": 1200},
+      {"url": "https://picsum.photos/seed/harlow4/1600/1200", "alt": "Harlow Sofa fabric detail", "width": 1600, "height": 1200}
+    ],
+    "options": [
+      {"name": "Fabric", "values": ["Performance Linen", "Velvet"]},
+      {"name": "Color", "values": ["Oatmeal", "Slate", "Moss", "Navy"]}
+    ],
+    "swatches": {"Oatmeal": "#D8CDB9", "Slate": "#6B7580", "Moss": "#6F7B52", "Navy": "#1F2A44"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1001a", "title": "Performance Linen / Oatmeal", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Performance Linen"}, {"name": "Color", "value": "Oatmeal"}]},
+      {"id": "gid://shopify/ProductVariant/1001b", "title": "Performance Linen / Slate", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Performance Linen"}, {"name": "Color", "value": "Slate"}]},
+      {"id": "gid://shopify/ProductVariant/1001c", "title": "Performance Linen / Moss", "availableForSale": false, "selectedOptions": [{"name": "Fabric", "value": "Performance Linen"}, {"name": "Color", "value": "Moss"}]},
+      {"id": "gid://shopify/ProductVariant/1001d", "title": "Performance Linen / Navy", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Performance Linen"}, {"name": "Color", "value": "Navy"}]},
+      {"id": "gid://shopify/ProductVariant/1001e", "title": "Velvet / Oatmeal", "availableForSale": false, "price": {"amount": "2099.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "2399.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Oatmeal"}]},
+      {"id": "gid://shopify/ProductVariant/1001f", "title": "Velvet / Slate", "availableForSale": true, "price": {"amount": "2099.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "2399.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Slate"}]},
+      {"id": "gid://shopify/ProductVariant/1001g", "title": "Velvet / Moss", "availableForSale": true, "price": {"amount": "2099.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "2399.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Moss"}]},
+      {"id": "gid://shopify/ProductVariant/1001h", "title": "Velvet / Navy", "availableForSale": true, "price": {"amount": "2099.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "2399.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Navy"}]}
+    ],
+    "details": {
+      "materials": "Kiln-dried hardwood frame, feather-wrapped foam cushions, performance linen blend or cotton velvet.",
+      "dimensions": "W 92in × D 40in × H 33in",
+      "seatHeight": "19in",
+      "seatDepth": "24in",
+      "armHeight": "25in",
+      "weight": "145 lb",
+      "upholstery": "Performance linen blend or cotton velvet",
+      "frame": "Kiln-dried hardwood",
+      "cushionFill": "High-resilience foam wrapped in feather and down alternative",
+      "legs": "Solid wood",
+      "assembly": "Minimal assembly required",
+      "shipping": "White-glove delivery in 4–6 weeks.",
+      "care": "Vacuum upholstery regularly. Spot clean spills promptly with a clean, damp cloth.",
+      "warranty": "Limited manufacturer warranty.",
+      "fabricGuide": [
+        {"fabric": "Performance Linen", "feel": "Soft, lightly textured", "best for": "Families and pets"},
+        {"fabric": "Velvet", "feel": "Plush, rich sheen", "best for": "Formal living rooms"}
+      ],
+      "packingDetails": [
+        {"package": "Box 1 — Sofa body", "dimensions": "93 × 41 × 34 in", "weight": "118 lb"},
+        {"package": "Box 2 — Seat cushions", "dimensions": "60 × 38 × 14 in", "weight": "22 lb"},
+        {"package": "Box 3 — Legs & hardware", "dimensions": "28 × 8 × 8 in", "weight": "5 lb"}
+      ]
+    },
+    "purchaseNotes": "Each sofa is prepared for delivery after your order is confirmed. Fabric and color availability can vary by production schedule.",
+    "content": {
+      "highlightsEyebrow": "The Harlow",
+      "highlightsTitle": "A quieter approach to everyday comfort.",
+      "highlightsText": "Soft where it counts, structured where it matters.",
+      "highlights": [
+        {"number": "01", "title": "Comfort", "text": "Deep seating and feather-wrapped cushions create a relaxed feel without losing the sofa's tailored shape."},
+        {"number": "02", "title": "Construction", "text": "A kiln-dried hardwood frame provides the foundation for a piece designed for everyday use."},
+        {"number": "03", "title": "Proportions", "text": "A low profile, generous depth and clean arms give the sofa an easy presence in larger and smaller rooms."},
+        {"number": "04", "title": "Upholstery", "text": "Choose a performance linen blend or plush velvet, each in four considered colors."}
+      ],
+      "story": {
+        "eyebrow": "The design",
+        "title": "Made for the room you actually live in.",
+        "text": "Harlow brings together generous proportions, tactile upholstery and a deliberately restrained silhouette. It is designed to feel at home in a quiet reading room or a busy family space.",
+        "image": {"url": "https://picsum.photos/seed/harlowstory/1600/1200", "alt": "Harlow Sofa in a calm interior", "width": 1600, "height": 1200}
+      },
+      "sections": [
+        {
+          "eyebrow": "Materials",
+          "title": "Built from the inside out.",
+          "text": "The construction starts with a kiln-dried hardwood frame, followed by resilient cushioning and a carefully chosen upholstery.",
+          "image": {"url": "https://picsum.photos/seed/harlowmaterials/1600/1200", "alt": "Harlow Sofa material detail", "width": 1600, "height": 1200}
+        },
+        {
+          "eyebrow": "Comfort",
+          "title": "Room to settle in.",
+          "text": "Generous seat depth and feather-wrapped cushions create a softer sitting experience that holds its shape over time.",
+          "image": {"url": "https://picsum.photos/seed/harlowcomfort/1600/1200", "alt": "Harlow Sofa seating detail", "width": 1600, "height": 1200}
+        }
+      ],
+      "detailsEyebrow": "Specifications",
+      "detailsTitle": "Everything you need to know.",
+      "detailsText": "Measurements, fabrics and packing details for planning your room.",
+      "relatedTitle": "Pieces that sit naturally alongside Harlow.",
+      "moreEyebrow": "Keep exploring",
+      "moreTitle": "More to love."
+    },
+    "reviews": [
+      {"id": "r-1001-01", "author": "Priya S.", "rating": 5, "title": "Worth every penny", "body": "The depth is perfect for sinking in with a book. The feather-wrapped cushions still look great after three months, and delivery was seamless.", "date": "2026-09-22T10:15:00Z", "verified": true, "helpful": 14},
+      {"id": "r-1001-02", "author": "Daniel M.", "rating": 5, "title": "Looks far more expensive than it is", "body": "Got the Velvet in Navy and it's stunning in our living room.\n\nThe frame feels very solid and the white-glove team assembled everything in minutes.", "date": "2026-09-10T16:40:00Z", "verified": true, "helpful": 9},
+      {"id": "r-1001-03", "author": "Aisha K.", "rating": 4, "title": "Comfortable, a little deep for me", "body": "Gorgeous sofa and very comfortable. At 5'2\" my feet don't quite touch the floor when I sit all the way back, so I use a pillow. Otherwise no complaints.", "date": "2026-08-28T08:05:00Z", "verified": true, "helpful": 6},
+      {"id": "r-1001-04", "author": "Tom R.", "rating": 5, "title": "", "body": "Performance linen has handled two kids and a dog without a mark.", "date": "2026-08-14T19:20:00Z", "verified": true, "helpful": 3},
+      {"id": "r-1001-05", "author": "Marguerite Delacroix-Whitmore", "rating": 3, "title": "Good sofa, long wait", "body": "The sofa itself is lovely and well made, but delivery took closer to eight weeks than the quoted four to six. Communication from the team was good, though.", "date": "2026-07-30T12:00:00Z", "verified": true, "helpful": 11},
+      {"id": "r-1001-06", "author": "Chris L.", "rating": 4, "title": "Great, but feathers need fluffing", "body": "Cushions are plush but need daily fluffing to keep their shape. That's expected with feather fill, so I'm not marking it down much.", "date": "2026-07-12T09:30:00Z", "verified": false, "helpful": 2},
+      {"id": "r-1001-07", "author": "Sofia B.", "rating": 5, "title": "Our favorite piece of furniture", "body": "Everyone who visits asks where we got it. Color Slate looks great in natural light.", "date": "2026-06-25T14:10:00Z", "verified": true, "helpful": 5},
+      {"id": "r-1001-08", "author": "Greg H.", "rating": 2, "title": "Color differed from photos", "body": "The Oatmeal was noticeably warmer than it looked online. Quality is fine, but I wish the photos were more accurate. Customer service offered a swatch exchange.", "date": "2026-06-02T11:45:00Z", "verified": true, "helpful": 7},
+      {"id": "r-1001-09", "author": "Nina P.", "rating": 5, "title": "Perfect", "body": "Exactly what I was looking for.", "date": "2026-05-18T17:55:00Z", "verified": false, "helpful": 0}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1002",
+    "handle": "wren-1-seater-sofa",
+    "title": "Wren 1-Seater Sofa",
+    "vendor": "Klaussner",
+    "productType": "1-Seater Sofa",
+    "description": "A deep, low-profile sofa designed for relaxed everyday living. The Wren pairs generous cushioning with a tailored silhouette and a compact footprint that works beautifully in intimate spaces.",
+    "tags": ["sofa", "1-seater", "living room", "upholstered", "modern", "compact"],
+    "collections": ["living-room", "sofas", "1-seater-sofas", "featured", "sale"],
+    "availableForSale": true,
+    "price": {"amount": "899.00", "currencyCode": "USD"},
+    "compareAtPrice": {"amount": "1099.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/wren1/1800/1350", "alt": "Wren 1-Seater Sofa", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/wren2/1800/1350", "alt": "Wren sofa in a living room", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/wren3/1800/1350", "alt": "Wren sofa fabric detail", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/wren4/1800/1350", "alt": "Wren sofa styled", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/wren5/1800/1350", "alt": "Wren sofa interior detail", "width": 1800, "height": 1350}
+    ],
+    "options": [{"name": "Fabric", "values": ["Oatmeal", "Sand", "Charcoal", "Forest"]}],
+    "swatches": {"Oatmeal": "#D8CDB9", "Sand": "#D2BFA0", "Charcoal": "#3A3A3C", "Forest": "#2F4A3A"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1002a", "title": "Oatmeal", "availableForSale": true, "price": {"amount": "899.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1099.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Oatmeal"}]},
+      {"id": "gid://shopify/ProductVariant/1002b", "title": "Sand", "availableForSale": true, "price": {"amount": "899.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1099.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Sand"}]},
+      {"id": "gid://shopify/ProductVariant/1002c", "title": "Charcoal", "availableForSale": true, "price": {"amount": "949.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1149.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Charcoal"}]},
+      {"id": "gid://shopify/ProductVariant/1002d", "title": "Forest", "availableForSale": false, "price": {"amount": "949.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1149.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Forest"}]}
+    ],
+    "details": {
+      "materials": "Kiln-dried hardwood frame with high-resilience foam and feather-wrapped seat cushions.",
+      "dimensions": "38 W × 38 D × 33 H in",
+      "seatHeight": "18 in",
+      "seatDepth": "24 in",
+      "armHeight": "25 in",
+      "weight": "78 lb",
+      "upholstery": "Performance linen blend",
+      "frame": "Kiln-dried hardwood",
+      "legs": "Solid hardwood",
+      "assembly": "Minimal assembly required",
+      "shipping": "White-glove delivery available. Estimated delivery is shown at checkout.",
+      "care": "Vacuum upholstery regularly. Blot spills immediately with a clean, dry cloth.",
+      "warranty": "Limited manufacturer's warranty included.",
+      "packingDetails": {
+        "columns": ["Package", "Dimensions", "Weight"],
+        "rows": [
+          ["Box 1 of 2 — Sofa body", "40 × 40 × 35 in", "64 lb"],
+          ["Box 2 of 2 — Cushion & legs", "30 × 26 × 12 in", "14 lb"]
+        ]
+      }
+    },
+    "purchaseNotes": "Delivery options, estimated arrival dates and applicable shipping charges are shown before purchase.",
+    "content": {
+      "highlightsEyebrow": "The Wren",
+      "highlightsTitle": "Designed around the way you live.",
+      "highlights": [
+        {"number": "01", "title": "Comfort", "text": "Deep seating and feather-wrapped cushions create a relaxed feel without losing the structure of the silhouette."},
+        {"number": "02", "title": "Construction", "text": "A kiln-dried hardwood frame provides a durable foundation designed for everyday use."},
+        {"number": "03", "title": "Proportions", "text": "The compact one-seat footprint makes the Wren easy to place in apartments, reading corners and smaller spaces."},
+        {"number": "04", "title": "Upholstery", "text": "A tactile performance linen blend balances a soft hand feel with practical everyday durability."}
+      ],
+      "story": {
+        "eyebrow": "The Wren Collection",
+        "title": "A quieter place to settle in.",
+        "text": "Wren was designed around the moments that make a home feel like your own. Its low profile, generous seat and softly tailored upholstery create a relaxed presence without overwhelming the room.",
+        "image": {"url": "https://picsum.photos/seed/wrenstory/1800/1350", "alt": "Wren sofa in a calm modern interior", "width": 1800, "height": 1350}
+      },
+      "sections": [
+        {"eyebrow": "Built to last", "title": "Considered materials, from the inside out.", "text": "The Wren combines a kiln-dried hardwood frame with resilient cushioning and carefully selected upholstery."},
+        {"eyebrow": "Everyday comfort", "title": "Made for slow mornings and long evenings.", "text": "Generous seat depth and layered cushioning create a relaxed place to read, talk, watch a film or simply take a moment."}
+      ],
+      "detailsEyebrow": "Specifications",
+      "detailsTitle": "Everything you need to know.",
+      "relatedTitle": "Complete the room."
+    },
+    "reviews": [
+      {"id": "r-1002-01", "author": "Hannah W.", "rating": 5, "title": "The perfect reading chair", "body": "Fits our small bedroom corner perfectly and is far more comfortable than it looks.", "date": "2026-09-30T09:00:00Z", "verified": true, "helpful": 4},
+      {"id": "r-1002-02", "author": "Luis G.", "rating": 4, "title": "Compact and well built", "body": "Nicely made. I'd love a slightly firmer seat, but it's a minor point.", "date": "2026-09-05T13:25:00Z", "verified": true, "helpful": 1},
+      {"id": "r-1002-03", "author": "Emma T.", "rating": 5, "title": "Love the Sand color", "body": "Looks fantastic with our wood floors.", "date": "2026-08-19T18:10:00Z", "verified": true, "helpful": 0},
+      {"id": "r-1002-04", "author": "Kenji A.", "rating": 5, "title": "Great value", "body": "Great value for a piece this well finished, and it arrived earlier than expected.", "date": "2026-07-21T07:45:00Z", "verified": false, "helpful": 2},
+      {"id": "r-1002-05", "author": "Olivia R.", "rating": 4, "title": "", "body": "Lovely chair. Legs were easy to attach.", "date": "2026-06-11T15:30:00Z", "verified": true, "helpful": 0}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1003",
+    "handle": "marlowe-recliner",
+    "title": "Marlowe Recliner",
+    "vendor": "Klaussner",
+    "productType": "Recliner",
+    "description": "A power recliner with a quiet motor and a tailored, upright profile.",
+    "tags": ["recliner", "living room", "power", "leather"],
+    "collections": ["recliners", "living-room"],
+    "availableForSale": true,
+    "price": {"amount": "1299.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/marlowe1/1200/900", "alt": "Marlowe Recliner", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/marlowe2/1200/900", "alt": "Marlowe Recliner reclined", "width": 1200, "height": 900}
+    ],
+    "options": [{"name": "Leather", "values": ["Cognac", "Charcoal", "Espresso"]}],
+    "swatches": {"Cognac": "#9A5B2E", "Charcoal": "#3A3A3C", "Espresso": "#3B2A22"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1003a", "title": "Cognac", "availableForSale": true, "selectedOptions": [{"name": "Leather", "value": "Cognac"}]},
+      {"id": "gid://shopify/ProductVariant/1003b", "title": "Charcoal", "availableForSale": false, "selectedOptions": [{"name": "Leather", "value": "Charcoal"}]},
+      {"id": "gid://shopify/ProductVariant/1003c", "title": "Espresso", "availableForSale": true, "price": {"amount": "1349.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Leather", "value": "Espresso"}]}
+    ],
+    "details": {
+      "materials": "Top-grain leather, steel mechanism.",
+      "dimensions": "W 36in × D 39in × H 40in",
+      "shipping": "Ships in 3–5 weeks."
+    },
+    "content": {
+      "highlightsEyebrow": "The Marlowe",
+      "highlightsTitle": "Quietly powerful.",
+      "highlights": [
+        {"title": "Motor", "text": "A whisper-quiet power mechanism moves smoothly through every position."},
+        {"title": "Leather", "text": "Top-grain leather develops a richer character with every year of use."}
+      ]
+    },
+    "reviews": [
+      {"id": "r-1003-01", "author": "Robert J.", "rating": 5, "title": "Silent and smooth", "body": "I was worried about motor noise but it's genuinely quiet. The Cognac leather is beautiful.", "date": "2026-09-18T20:00:00Z", "verified": true, "helpful": 8}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1004",
+    "handle": "aldine-dining-table",
+    "title": "Aldine Dining Table",
+    "vendor": "Klaussner",
+    "productType": "Dining Table",
+    "description": "Solid oak dining table with a softly eased edge, seating six to ten depending on size.",
+    "tags": ["dining table", "dining", "solid wood", "oak"],
+    "collections": ["dining-rooms", "tables"],
+    "availableForSale": true,
+    "price": {"amount": "2450.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/aldine1/1200/900", "alt": "Aldine Dining Table", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/aldine2/1200/900", "alt": "Aldine table edge detail", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/aldine3/1200/900", "alt": "Aldine table styled", "width": 1200, "height": 900}
+    ],
+    "options": [
+      {"name": "Finish", "values": ["Natural", "Smoked"]},
+      {"name": "Size", "values": ["72in", "84in", "96in"]}
+    ],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1004a", "title": "Natural / 72in", "availableForSale": true, "price": {"amount": "2450.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Finish", "value": "Natural"}, {"name": "Size", "value": "72in"}]},
+      {"id": "gid://shopify/ProductVariant/1004b", "title": "Natural / 84in", "availableForSale": true, "price": {"amount": "2750.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Finish", "value": "Natural"}, {"name": "Size", "value": "84in"}]},
+      {"id": "gid://shopify/ProductVariant/1004c", "title": "Natural / 96in", "availableForSale": false, "price": {"amount": "3050.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Finish", "value": "Natural"}, {"name": "Size", "value": "96in"}]},
+      {"id": "gid://shopify/ProductVariant/1004d", "title": "Smoked / 72in", "availableForSale": true, "price": {"amount": "2550.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Finish", "value": "Smoked"}, {"name": "Size", "value": "72in"}]},
+      {"id": "gid://shopify/ProductVariant/1004e", "title": "Smoked / 84in", "availableForSale": true, "price": {"amount": "2850.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Finish", "value": "Smoked"}, {"name": "Size", "value": "84in"}]},
+      {"id": "gid://shopify/ProductVariant/1004f", "title": "Smoked / 96in", "availableForSale": true, "price": {"amount": "3150.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Finish", "value": "Smoked"}, {"name": "Size", "value": "96in"}]}
+    ],
+    "details": {
+      "materials": "Solid white oak, hand-rubbed oil finish.",
+      "width": "72 / 84 / 96 in",
+      "depth": "40 in",
+      "height": "30 in",
+      "weight": "180–260 lb depending on size",
+      "seating": "Six to ten people",
+      "shipping": "Delivered assembled.",
+      "care": "Wipe with a soft damp cloth. Re-oil once a year to keep the finish rich.",
+      "packingDetails": [
+        {"package": "Tabletop", "dimensions": "98 × 42 × 6 in", "weight": "165 lb"},
+        {"package": "Base & hardware", "dimensions": "40 × 34 × 12 in", "weight": "58 lb"}
+      ]
+    },
+    "content": {
+      "story": {
+        "eyebrow": "Crafted in oak",
+        "title": "A table that gathers people.",
+        "text": "The Aldine is cut from solid white oak with a softly eased edge, designed to age gracefully through years of dinners, homework and slow weekend breakfasts."
+      },
+      "sections": [
+        {
+          "eyebrow": "The finish",
+          "title": "Natural or smoked, always hand-rubbed.",
+          "text": "A hand-rubbed oil finish lets the grain show through and makes everyday marks easy to refresh.",
+          "image": {"url": "https://picsum.photos/seed/aldinefinish/1600/1200", "alt": "Aldine oak finish", "width": 1600, "height": 1200}
+        }
+      ],
+      "detailsEyebrow": "Specifications",
+      "detailsTitle": "Size it to your room."
+    },
+    "reviews": [
+      {"id": "r-1004-01", "author": "Carolyn B.", "rating": 5, "title": "Heirloom quality", "body": "The oak grain is gorgeous and the table is incredibly sturdy. We've hosted twelve people and it didn't budge.", "date": "2026-09-26T18:30:00Z", "verified": true, "helpful": 12},
+      {"id": "r-1004-02", "author": "Mike D.", "rating": 4, "title": "Beautiful, heavy", "body": "Stunning table. It's very heavy, so plan for help when positioning it.", "date": "2026-09-01T11:00:00Z", "verified": true, "helpful": 5},
+      {"id": "r-1004-03", "author": "Fatima N.", "rating": 1, "title": "Arrived with a scratch", "body": "A noticeable scratch across the top on arrival. Support was responsive but replacement took over a month.", "date": "2026-08-20T09:20:00Z", "verified": true, "helpful": 9},
+      {"id": "r-1004-04", "author": "Jonas E.", "rating": 5, "title": "Smoked finish is incredible", "body": "The Smoked finish is deeper and richer than the photos suggest.", "date": "2026-07-29T16:45:00Z", "verified": true, "helpful": 3},
+      {"id": "r-1004-05", "author": "Beth A.", "rating": 3, "title": "Good, expected more", "body": "Solid table but the oil finish shows water rings easily. Coasters are a must.", "date": "2026-07-04T12:10:00Z", "verified": false, "helpful": 6},
+      {"id": "r-1004-06", "author": "Raj P.", "rating": 5, "title": "", "body": "Centerpiece of our dining room.", "date": "2026-06-15T19:00:00Z", "verified": true, "helpful": 1}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1005",
+    "handle": "sutton-bed",
+    "title": "Sutton Bed",
+    "vendor": "Klaussner",
+    "productType": "Bed",
+    "description": "An upholstered bed with a gently curved headboard and slim profile.",
+    "tags": ["bed", "bedroom", "upholstered"],
+    "collections": ["bedroom", "beds"],
+    "availableForSale": true,
+    "price": {"amount": "1650.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/sutton1/1200/900", "alt": "Sutton Bed", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/sutton2/1200/900", "alt": "Sutton Bed headboard", "width": 1200, "height": 900}
+    ],
+    "options": [
+      {"name": "Size", "values": ["Queen", "King"]},
+      {"name": "Fabric", "values": ["Bouclé Ivory", "Velvet Sage"]}
+    ],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1005a", "title": "Queen / Bouclé Ivory", "availableForSale": true, "selectedOptions": [{"name": "Size", "value": "Queen"}, {"name": "Fabric", "value": "Bouclé Ivory"}]},
+      {"id": "gid://shopify/ProductVariant/1005b", "title": "Queen / Velvet Sage", "availableForSale": true, "selectedOptions": [{"name": "Size", "value": "Queen"}, {"name": "Fabric", "value": "Velvet Sage"}]},
+      {"id": "gid://shopify/ProductVariant/1005c", "title": "King / Bouclé Ivory", "availableForSale": true, "price": {"amount": "1850.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "King"}, {"name": "Fabric", "value": "Bouclé Ivory"}]},
+      {"id": "gid://shopify/ProductVariant/1005d", "title": "King / Velvet Sage", "availableForSale": false, "price": {"amount": "1850.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "King"}, {"name": "Fabric", "value": "Velvet Sage"}]}
+    ],
+    "details": {
+      "materials": "Hardwood frame, bouclé or velvet upholstery.",
+      "dimensions": "Queen: W 66in × D 86in × H 48in",
+      "headboardHeight": "48 in",
+      "slats": "Included, no box spring required",
+      "shipping": "Ships in 4–6 weeks."
+    },
+    "content": {
+      "highlightsEyebrow": "The Sutton",
+      "highlightsTitle": "Soft lines for restful rooms.",
+      "highlightsText": "A slim profile that keeps the room feeling open.",
+      "highlights": [
+        {"number": "01", "title": "Headboard", "text": "A gently curved headboard frames the bed without crowding the wall."},
+        {"number": "02", "title": "Frame", "text": "A solid hardwood frame keeps the bed steady and silent."},
+        {"number": "03", "title": "Fabric", "text": "Choose tactile bouclé or soft velvet in two calm tones."}
+      ]
+    },
+    "reviews": [
+      {"id": "r-1005-01", "author": "Lena V.", "rating": 5, "title": "Hotel-suite feel", "body": "The curved headboard is lovely and the bed is silent. Bouclé Ivory is dreamy.", "date": "2026-09-14T08:30:00Z", "verified": true, "helpful": 7},
+      {"id": "r-1005-02", "author": "Paul Q.", "rating": 4, "title": "Easy to assemble", "body": "Took about 40 minutes with a second person. Very sturdy once together.", "date": "2026-08-08T20:15:00Z", "verified": true, "helpful": 2},
+      {"id": "r-1005-03", "author": "Yuki H.", "rating": 4, "title": "", "body": "Great bed. Headboard is a bit tall for my low ceiling but looks beautiful.", "date": "2026-07-02T10:50:00Z", "verified": false, "helpful": 0}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1006",
+    "handle": "ellery-sleeper-sofa",
+    "title": "Ellery Sleeper Sofa",
+    "vendor": "Klaussner",
+    "productType": "Sleeper Sofa",
+    "description": "A refined sofa with a hidden queen mattress and a no-fuss pull-out.",
+    "tags": ["sofa", "sleeper", "living room", "guest room"],
+    "collections": ["sleeper-sofas", "living-room", "sale", "sofas"],
+    "availableForSale": true,
+    "price": {"amount": "1599.00", "currencyCode": "USD"},
+    "compareAtPrice": {"amount": "1899.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/ellery1/1200/900", "alt": "Ellery Sleeper Sofa", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/ellery2/1200/900", "alt": "Ellery open as bed", "width": 1200, "height": 900}
+    ],
+    "options": [
+      {"name": "Fabric", "values": ["Chenille", "Linen Blend"]},
+      {"name": "Color", "values": ["Stone", "Moss", "Charcoal"]}
+    ],
+    "swatches": {"Stone": "#C9C2B6", "Moss": "#6F7B52", "Charcoal": "#3A3A3C"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1006a", "title": "Chenille / Stone", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Chenille"}, {"name": "Color", "value": "Stone"}]},
+      {"id": "gid://shopify/ProductVariant/1006b", "title": "Chenille / Moss", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Chenille"}, {"name": "Color", "value": "Moss"}]},
+      {"id": "gid://shopify/ProductVariant/1006c", "title": "Chenille / Charcoal", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Chenille"}, {"name": "Color", "value": "Charcoal"}]},
+      {"id": "gid://shopify/ProductVariant/1006d", "title": "Linen Blend / Stone", "availableForSale": true, "price": {"amount": "1699.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1999.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Linen Blend"}, {"name": "Color", "value": "Stone"}]},
+      {"id": "gid://shopify/ProductVariant/1006e", "title": "Linen Blend / Moss", "availableForSale": true, "price": {"amount": "1699.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1999.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Linen Blend"}, {"name": "Color", "value": "Moss"}]},
+      {"id": "gid://shopify/ProductVariant/1006f", "title": "Linen Blend / Charcoal", "availableForSale": false, "price": {"amount": "1699.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1999.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Linen Blend"}, {"name": "Color", "value": "Charcoal"}]}
+    ],
+    "details": {
+      "materials": "Hardwood frame, memory-foam mattress.",
+      "dimensions": "W 84in × D 38in × H 35in",
+      "mattressSize": "Queen",
+      "shipping": "Ships in 3–5 weeks.",
+      "warranty": "5-year frame, 1-year mattress."
+    },
+    "content": {
+      "sections": [
+        {
+          "eyebrow": "Guest-ready",
+          "title": "From sofa to bed in seconds.",
+          "text": "A smooth pull-out mechanism opens a full queen memory-foam mattress, with no wrestling and no visible bar.",
+          "image": {"url": "https://picsum.photos/seed/elleryopen/1600/1200", "alt": "Ellery pull-out mechanism", "width": 1600, "height": 1200}
+        },
+        {
+          "eyebrow": "Everyday seating",
+          "title": "A sofa first.",
+          "text": "Supportive cushions and a tailored frame mean the Ellery sits like a regular sofa, not a compromise.",
+          "image": {"url": "https://picsum.photos/seed/elleryseat/1600/1200", "alt": "Ellery seating", "width": 1600, "height": 1200}
+        }
+      ]
+    },
+    "reviews": [
+      {"id": "r-1006-01", "author": "Andrea C.", "rating": 5, "title": "Guests actually sleep well", "body": "My in-laws stayed a week and raved about the mattress. No bar in the back, which is a first for a sleeper.", "date": "2026-09-27T07:20:00Z", "verified": true, "helpful": 15},
+      {"id": "r-1006-02", "author": "Victor S.", "rating": 4, "title": "Solid dual-purpose piece", "body": "Sits well as a sofa and the pull-out is smooth. It's heavy to open at first but gets easier.", "date": "2026-09-09T14:40:00Z", "verified": true, "helpful": 4},
+      {"id": "r-1006-03", "author": "Mei L.", "rating": 5, "title": "Fits the studio", "body": "Replaced a bulky futon. Moss chenille is soft and looks rich.", "date": "2026-08-23T10:05:00Z", "verified": true, "helpful": 2},
+      {"id": "r-1006-04", "author": "Brian T.", "rating": 2, "title": "Mattress a bit thin", "body": "Fine for a night or two, but the mattress is thinner than I hoped for longer stays. The sofa side is great.", "date": "2026-08-01T18:55:00Z", "verified": true, "helpful": 8},
+      {"id": "r-1006-05", "author": "Sara O.", "rating": 5, "title": "", "body": "Delivery team was wonderful and took the packaging away.", "date": "2026-07-17T09:15:00Z", "verified": false, "helpful": 0},
+      {"id": "r-1006-06", "author": "Ian F.", "rating": 3, "title": "Okay for the price", "body": "Linen Blend wrinkles a bit more than expected. Comfort is good.", "date": "2026-06-28T13:35:00Z", "verified": true, "helpful": 3},
+      {"id": "r-1006-07", "author": "Zoe K.", "rating": 4, "title": "Happy overall", "body": "Looks like a regular sofa, which was exactly the goal.", "date": "2026-06-06T16:25:00Z", "verified": true, "helpful": 1}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1007",
+    "handle": "nordhaven-sectional",
+    "title": "Nordhaven Sectional",
+    "vendor": "Klaussner",
+    "productType": "Sectional",
+    "description": "A generous modular sectional with a reversible chaise, built for movie nights and full-house gatherings.",
+    "tags": ["sectional", "living room", "chaise", "modular", "family"],
+    "collections": ["living-room", "sectionals", "sofas", "featured", "sale"],
+    "availableForSale": true,
+    "price": {"amount": "4899.00", "currencyCode": "USD"},
+    "compareAtPrice": {"amount": "5499.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/nordhaven1/1800/1350", "alt": "Nordhaven Sectional", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/nordhaven2/1800/1350", "alt": "Nordhaven chaise detail", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/nordhaven3/1800/1350", "alt": "Nordhaven styled in a family room", "width": 1800, "height": 1350}
+    ],
+    "options": [
+      {"name": "Configuration", "values": ["Left Chaise", "Right Chaise"]},
+      {"name": "Fabric", "values": ["Performance Weave", "Velvet"]},
+      {"name": "Color", "values": ["Mist", "Ink"]}
+    ],
+    "swatches": {"Mist": "#CBD2D6", "Ink": "#1D2430"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1007a", "title": "Left Chaise / Performance Weave / Mist", "availableForSale": true, "selectedOptions": [{"name": "Configuration", "value": "Left Chaise"}, {"name": "Fabric", "value": "Performance Weave"}, {"name": "Color", "value": "Mist"}]},
+      {"id": "gid://shopify/ProductVariant/1007b", "title": "Left Chaise / Performance Weave / Ink", "availableForSale": true, "selectedOptions": [{"name": "Configuration", "value": "Left Chaise"}, {"name": "Fabric", "value": "Performance Weave"}, {"name": "Color", "value": "Ink"}]},
+      {"id": "gid://shopify/ProductVariant/1007c", "title": "Left Chaise / Velvet / Mist", "availableForSale": true, "price": {"amount": "5299.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "5899.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Configuration", "value": "Left Chaise"}, {"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Mist"}]},
+      {"id": "gid://shopify/ProductVariant/1007d", "title": "Left Chaise / Velvet / Ink", "availableForSale": true, "price": {"amount": "5299.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "5899.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Configuration", "value": "Left Chaise"}, {"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Ink"}]},
+      {"id": "gid://shopify/ProductVariant/1007e", "title": "Right Chaise / Performance Weave / Mist", "availableForSale": true, "selectedOptions": [{"name": "Configuration", "value": "Right Chaise"}, {"name": "Fabric", "value": "Performance Weave"}, {"name": "Color", "value": "Mist"}]},
+      {"id": "gid://shopify/ProductVariant/1007f", "title": "Right Chaise / Performance Weave / Ink", "availableForSale": true, "selectedOptions": [{"name": "Configuration", "value": "Right Chaise"}, {"name": "Fabric", "value": "Performance Weave"}, {"name": "Color", "value": "Ink"}]},
+      {"id": "gid://shopify/ProductVariant/1007g", "title": "Right Chaise / Velvet / Mist", "availableForSale": true, "price": {"amount": "5299.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "5899.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Configuration", "value": "Right Chaise"}, {"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Mist"}]},
+      {"id": "gid://shopify/ProductVariant/1007h", "title": "Right Chaise / Velvet / Ink", "availableForSale": false, "price": {"amount": "5299.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "5899.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Configuration", "value": "Right Chaise"}, {"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Ink"}]}
+    ],
+    "details": {
+      "materials": "Kiln-dried hardwood frame, high-resilience foam, down-blend back cushions.",
+      "width": "128 in",
+      "depth": "66 in",
+      "height": "34 in",
+      "seatDepth": "26 in",
+      "weight": "310 lb",
+      "upholstery": "Stain-resistant woven blend or cotton velvet",
+      "includes": ["3 seat cushions", "4 back cushions", "2 accent pillows"],
+      "petFriendly": true,
+      "assembly": "Modular sections connect without tools.",
+      "shipping": "White-glove delivery with room-of-choice placement.",
+      "care": "Rotate cushions monthly. Professional cleaning recommended for deep stains.",
+      "warranty": "10-year limited frame warranty.",
+      "packingDetails": [
+        {"package": "Box 1 — Sofa section", "dimensions": "86 × 42 × 36 in", "weight": "128 lb"},
+        {"package": "Box 2 — Chaise section", "dimensions": "74 × 40 × 36 in", "weight": "112 lb"},
+        {"package": "Box 3 — Seat cushions", "dimensions": "64 × 30 × 18 in", "weight": "36 lb"},
+        {"package": "Box 4 — Back cushions & pillows", "dimensions": "40 × 30 × 24 in", "weight": "24 lb"}
+      ],
+      "sizeGuide": {
+        "rows": [
+          {"cells": ["Section", "Width", "Depth"]},
+          {"cells": ["Sofa", "86 in", "40 in"]},
+          {"cells": ["Chaise", "42 in", "66 in"]},
+          {"cells": ["Overall", "128 in", "66 in"]}
+        ]
+      }
+    },
+    "purchaseNotes": "Choose your chaise side carefully, as the configuration is set at the factory.",
+    "content": {
+      "highlightsEyebrow": "The Nordhaven",
+      "highlightsTitle": "Room for everyone.",
+      "highlightsText": "Built for the loudest, warmest room in the house.",
+      "highlights": [
+        {"number": "01", "title": "Scale", "text": "A generous 128 inch span seats the whole family with space to stretch out."},
+        {"number": "02", "title": "Chaise", "text": "A deep reversible chaise gives you a proper place to put your feet up."},
+        {"number": "03", "title": "Cushions", "text": "Down-blend back cushions stay plush and are easy to plump back into shape."},
+        {"number": "04", "title": "Fabric", "text": "A stain-resistant weave or plush velvet that handles real life without looking worn."}
+      ],
+      "story": {
+        "eyebrow": "Family room, redefined",
+        "title": "Made for movie nights and morning chaos.",
+        "text": "The Nordhaven is sized for the way big households actually live, with durable materials, deep seats and a layout that makes the whole room feel more inviting."
+      },
+      "sections": [
+        {"eyebrow": "Modular", "title": "Arrives in pieces, fits like one.", "text": "Sections slide together without tools and stay securely connected, which also makes the sectional easier to move through narrow doorways and stairs."}
+      ],
+      "detailsEyebrow": "Specifications",
+      "detailsTitle": "Measure twice, relax once.",
+      "relatedTitle": "Finish the room."
+    },
+    "reviews": [
+      {"id": "r-1007-01", "author": "The Alvarez Family", "rating": 5, "title": "Movie night heaven", "body": "Seats all five of us plus the dog. The Performance Weave has shrugged off spilled juice and muddy paws.", "date": "2026-09-29T21:10:00Z", "verified": true, "helpful": 18},
+      {"id": "r-1007-02", "author": "Kimberly J.", "rating": 5, "title": "Worth the investment", "body": "Sections slid through our narrow hallway with ease, and assembly needed no tools.", "date": "2026-09-12T12:00:00Z", "verified": true, "helpful": 10},
+      {"id": "r-1007-03", "author": "Ahmed R.", "rating": 5, "title": "Incredibly comfortable", "body": "The chaise is the best seat in the house. Fights over it are real.", "date": "2026-08-25T17:30:00Z", "verified": true, "helpful": 6},
+      {"id": "r-1007-04", "author": "Natalie P.", "rating": 5, "title": "Gorgeous in Ink velvet", "body": "Rich color, plush texture, and the back cushions stay full.", "date": "2026-07-19T08:45:00Z", "verified": true, "helpful": 4},
+      {"id": "r-1007-05", "author": "George W.", "rating": 5, "title": "", "body": "Five stars. Delivery crew placed it exactly where we wanted.", "date": "2026-06-20T15:20:00Z", "verified": false, "helpful": 1}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1008",
+    "handle": "vance-accent-chair",
+    "title": "Vance Accent Chair",
+    "vendor": "Atelier North",
+    "productType": "Accent Chair",
+    "description": "A sculptural accent chair with a curved back and slim tapered legs.",
+    "tags": ["accent chair", "chair", "living room", "bedroom", "new"],
+    "collections": ["accent-chairs", "living-room", "new-arrivals"],
+    "availableForSale": true,
+    "price": {"amount": "549.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/vance1/1200/900", "alt": "Vance Accent Chair", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/vance2/1200/900", "alt": "Vance chair back detail", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/vance3/1200/900", "alt": "Vance chair in a corner", "width": 1200, "height": 900}
+    ],
+    "options": [
+      {"name": "Fabric", "values": ["Bouclé Cream", "Velvet Rust", "Linen Sage"]},
+      {"name": "Leg Finish", "values": ["Black", "Walnut"]}
+    ],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1008a", "title": "Bouclé Cream / Black", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Bouclé Cream"}, {"name": "Leg Finish", "value": "Black"}]},
+      {"id": "gid://shopify/ProductVariant/1008b", "title": "Bouclé Cream / Walnut", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Bouclé Cream"}, {"name": "Leg Finish", "value": "Walnut"}]},
+      {"id": "gid://shopify/ProductVariant/1008c", "title": "Velvet Rust / Black", "availableForSale": true, "price": {"amount": "579.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet Rust"}, {"name": "Leg Finish", "value": "Black"}]},
+      {"id": "gid://shopify/ProductVariant/1008d", "title": "Velvet Rust / Walnut", "availableForSale": false, "price": {"amount": "579.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet Rust"}, {"name": "Leg Finish", "value": "Walnut"}]},
+      {"id": "gid://shopify/ProductVariant/1008e", "title": "Linen Sage / Black", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Linen Sage"}, {"name": "Leg Finish", "value": "Black"}]},
+      {"id": "gid://shopify/ProductVariant/1008f", "title": "Linen Sage / Walnut", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Linen Sage"}, {"name": "Leg Finish", "value": "Walnut"}]}
+    ],
+    "details": {
+      "materials": "Solid beech frame, high-density foam.",
+      "width": "28 in",
+      "depth": "30 in",
+      "height": "31 in",
+      "seatHeight": "17 in",
+      "weight": "32 lb",
+      "assembly": "Legs attach in under five minutes.",
+      "shipping": "Ships in 1–2 weeks."
+    },
+    "content": {
+      "story": {
+        "eyebrow": "New arrival",
+        "title": "The small piece that finishes the room.",
+        "text": "A curved back and slim tapered legs give the Vance a light, sculptural presence that works as a reading chair, a bedroom corner or a quiet accent beside a larger sofa.",
+        "image": {"url": "https://picsum.photos/seed/vancestory/1600/1200", "alt": "Vance chair styled", "width": 1600, "height": 1200}
+      }
+    },
+    "reviews": [
+      {"id": "r-1008-01", "author": "Camille D.", "rating": 5, "title": "Sculptural and comfy", "body": "Draws compliments from everyone. The Bouclé Cream is soft without being fussy.", "date": "2026-10-02T11:30:00Z", "verified": true, "helpful": 3},
+      {"id": "r-1008-02", "author": "Owen S.", "rating": 4, "title": "Small but mighty", "body": "A touch smaller than I pictured, but perfect beside the bed.", "date": "2026-09-16T19:05:00Z", "verified": true, "helpful": 2},
+      {"id": "r-1008-03", "author": "Ruth M.", "rating": 3, "title": "Pretty, firm seat", "body": "Beautiful chair. The seat is on the firm side for long sitting.", "date": "2026-08-30T14:45:00Z", "verified": true, "helpful": 5},
+      {"id": "r-1008-04", "author": "Takeshi N.", "rating": 5, "title": "", "body": "Assembled in two minutes.", "date": "2026-08-12T09:50:00Z", "verified": false, "helpful": 0}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1009",
+    "handle": "sol-floor-lamp",
+    "title": "Sol Floor Lamp",
+    "vendor": "Atelier North",
+    "productType": "Lighting",
+    "description": "An arched brass floor lamp with a warm linen shade, no images yet.",
+    "tags": ["lighting", "floor lamp", "brass"],
+    "collections": ["lighting", "sale"],
+    "availableForSale": true,
+    "price": {"amount": "189.00", "currencyCode": "USD"},
+    "compareAtPrice": {"amount": "249.00", "currencyCode": "USD"},
+    "images": [],
+    "options": [{"name": "Title", "values": ["Default Title"]}],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1009a", "title": "Default Title", "availableForSale": true, "selectedOptions": [{"name": "Title", "value": "Default Title"}]}
+    ],
+    "details": {
+      "materials": "Brushed brass, linen shade.",
+      "height": "72 in",
+      "bulb": "E26, up to 60W (not included)",
+      "cord": "8 ft, inline switch",
+      "shipping": "Ships in 2–3 days."
+    }
+  },
+  {
+    "id": "gid://shopify/Product/1010",
+    "handle": "corbel-coffee-table",
+    "title": "Corbel Coffee Table",
+    "vendor": "Oak & Ember",
+    "productType": "Coffee Table",
+    "description": "A low, round coffee table with a solid timber top and a carved pedestal base.",
+    "tags": ["coffee table", "living room", "solid wood", "round", "handmade"],
+    "collections": ["living-room", "tables", "coffee-tables", "new-arrivals"],
+    "availableForSale": true,
+    "price": {"amount": "679.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/corbel1/1200/900", "alt": "Corbel Coffee Table", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/corbel2/1200/900", "alt": "Corbel pedestal base", "width": 1200, "height": 900}
+    ],
+    "options": [{"name": "Finish", "values": ["Walnut", "Ash"]}],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1010a", "title": "Walnut", "availableForSale": true, "selectedOptions": [{"name": "Finish", "value": "Walnut"}]},
+      {"id": "gid://shopify/ProductVariant/1010b", "title": "Ash", "availableForSale": true, "price": {"amount": "629.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Finish", "value": "Ash"}]}
+    ],
+    "details": {
+      "materials": "Solid timber top on a carved pedestal base, finished with a low-VOC water-based lacquer.",
+      "diameter": "40 in",
+      "height": "15 in",
+      "weight": "62 lb",
+      "madeBy": "Hand-finished by our workshop partners in Portugal.",
+      "indoorOnly": true,
+      "careNotes": ["Use coasters for hot or wet items.", "Dust with a soft dry cloth.", "Avoid direct sunlight to prevent fading."],
+      "shipping": "Ships in 2–3 weeks."
+    },
+    "content": {
+      "relatedTitle": "Pair it with"
+    },
+    "reviews": []
+  },
+  {
+    "id": "gid://shopify/Product/1011",
+    "handle": "tessa-area-rug",
+    "title": "Tessa Wool Area Rug",
+    "vendor": "Oak & Ember",
+    "productType": "Rug",
+    "description": "A hand-tufted wool rug with a soft textured pile and a subtle tonal border.",
+    "tags": ["rug", "wool", "living room", "bedroom", "hand-tufted"],
+    "collections": ["rugs", "living-room", "bedroom"],
+    "availableForSale": true,
+    "price": {"amount": "429.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/tessa1/1200/900", "alt": "Tessa Wool Area Rug", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/tessa2/1200/900", "alt": "Tessa rug pile detail", "width": 1200, "height": 900}
+    ],
+    "options": [
+      {"name": "Size", "values": ["5 × 8 ft", "8 × 10 ft", "9 × 12 ft"]},
+      {"name": "Color", "values": ["Ivory", "Sand", "Graphite"]}
+    ],
+    "swatches": {"Ivory": "#EFE9DC", "Sand": "#D2BFA0", "Graphite": "#4B4F54"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1011a", "title": "5 × 8 ft / Ivory", "availableForSale": true, "price": {"amount": "429.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "5 × 8 ft"}, {"name": "Color", "value": "Ivory"}]},
+      {"id": "gid://shopify/ProductVariant/1011b", "title": "5 × 8 ft / Sand", "availableForSale": true, "price": {"amount": "429.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "5 × 8 ft"}, {"name": "Color", "value": "Sand"}]},
+      {"id": "gid://shopify/ProductVariant/1011c", "title": "5 × 8 ft / Graphite", "availableForSale": true, "price": {"amount": "429.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "5 × 8 ft"}, {"name": "Color", "value": "Graphite"}]},
+      {"id": "gid://shopify/ProductVariant/1011d", "title": "8 × 10 ft / Ivory", "availableForSale": true, "price": {"amount": "799.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "8 × 10 ft"}, {"name": "Color", "value": "Ivory"}]},
+      {"id": "gid://shopify/ProductVariant/1011e", "title": "8 × 10 ft / Sand", "availableForSale": true, "price": {"amount": "799.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "8 × 10 ft"}, {"name": "Color", "value": "Sand"}]},
+      {"id": "gid://shopify/ProductVariant/1011f", "title": "8 × 10 ft / Graphite", "availableForSale": true, "price": {"amount": "799.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "8 × 10 ft"}, {"name": "Color", "value": "Graphite"}]},
+      {"id": "gid://shopify/ProductVariant/1011g", "title": "9 × 12 ft / Ivory", "availableForSale": true, "price": {"amount": "1099.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "9 × 12 ft"}, {"name": "Color", "value": "Ivory"}]},
+      {"id": "gid://shopify/ProductVariant/1011h", "title": "9 × 12 ft / Sand", "availableForSale": true, "price": {"amount": "1099.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "9 × 12 ft"}, {"name": "Color", "value": "Sand"}]},
+      {"id": "gid://shopify/ProductVariant/1011i", "title": "9 × 12 ft / Graphite", "availableForSale": false, "price": {"amount": "1099.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Size", "value": "9 × 12 ft"}, {"name": "Color", "value": "Graphite"}]}
+    ],
+    "details": {
+      "materials": "100% New Zealand wool pile, cotton backing.",
+      "pileHeight": "0.5 in",
+      "construction": "Hand-tufted",
+      "sizeGuide": {
+        "columns": ["Size", "Weight", "Best for"],
+        "rows": [
+          ["5 × 8 ft", "28 lb", "Bedrooms, reading corners"],
+          ["8 × 10 ft", "62 lb", "Living rooms, dining rooms"],
+          ["9 × 12 ft", "88 lb", "Open-plan and large rooms"]
+        ]
+      },
+      "care": "Vacuum without a beater bar. Rotate every six months.",
+      "shipping": "Rolled and shipped in 5–7 days."
+    },
+    "content": {
+      "story": {
+        "eyebrow": "Underfoot",
+        "title": "Warmth you can feel from the doorway.",
+        "text": "Hand-tufted from New Zealand wool, the Tessa has a soft, textured pile that adds depth and quiet to any room.",
+        "image": {"url": "https://picsum.photos/seed/tessastory/1600/1200", "alt": "Tessa rug in a bedroom", "width": 1600, "height": 1200}
+      }
+    },
+    "reviews": [
+      {"id": "r-1011-01", "author": "Dana F.", "rating": 2, "title": "Sheds a lot", "body": "Pretty rug, but it shed heavily for the first few weeks. Settling down now, but be prepared to vacuum often.", "date": "2026-09-08T10:40:00Z", "verified": true, "helpful": 5},
+      {"id": "r-1011-02", "author": "Peter V.", "rating": 1, "title": "Smaller than expected", "body": "Ordered the 8 × 10 ft and it looks smaller in the room than I imagined. Quality is fine, but size guidance should be clearer.", "date": "2026-08-02T16:15:00Z", "verified": true, "helpful": 2}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1012",
+    "handle": "ridley-bookcase",
+    "title": "Ridley Bookcase",
+    "vendor": "Oak & Ember",
+    "productType": "Storage",
+    "description": "A tall open bookcase in solid oak, currently sold out.",
+    "tags": ["storage", "bookcase", "office", "solid wood"],
+    "collections": ["storage", "home-office"],
+    "availableForSale": false,
+    "price": {"amount": "1190.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/ridley1/1200/900", "alt": "Ridley Bookcase", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/ridley2/1200/900", "alt": "Ridley shelf detail", "width": 1200, "height": 900}
+    ],
+    "options": [{"name": "Finish", "values": ["Oak"]}],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1012a", "title": "Oak", "availableForSale": false, "selectedOptions": [{"name": "Finish", "value": "Oak"}]}
+    ],
+    "details": {
+      "materials": "Solid oak, brass fixings.",
+      "width": "36 in",
+      "depth": "14 in",
+      "height": "78 in",
+      "shelfLoad": "40 lb per shelf",
+      "shipping": "Back in stock soon."
+    },
+    "reviews": [
+      {"id": "r-1012-01", "author": "Isabelle C.", "rating": 5, "title": "Sold out for a reason", "body": "Holds my entire cookbook collection without a sag. Oak is gorgeous.", "date": "2026-07-25T13:00:00Z", "verified": true, "helpful": 7},
+      {"id": "r-1012-02", "author": "Hugo R.", "rating": 4, "title": "Sturdy", "body": "Very sturdy. Wall anchor is a must at this height.", "date": "2026-06-14T09:35:00Z", "verified": true, "helpful": 4},
+      {"id": "r-1012-03", "author": "Alice N.", "rating": 5, "title": "", "body": "Love it.", "date": "2026-06-14T09:35:00Z", "verified": false, "helpful": 0}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1013",
+    "handle": "pike-side-table",
+    "title": "Pike Side Table",
+    "vendor": "Atelier North",
+    "productType": "Side Table",
+    "description": "A small round side table, the simplest possible product with no tags, details or content.",
+    "tags": [],
+    "collections": [],
+    "availableForSale": true,
+    "price": {"amount": "149.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/pike1/1200/900", "alt": "Pike Side Table", "width": 1200, "height": 900}
+    ],
+    "options": [],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1013a", "title": "Default Title", "availableForSale": true}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1014",
+    "handle": "amber-bar-stool",
+    "title": "Amber Bar Stool",
+    "vendor": "Klaussner",
+    "productType": "Bar Stool",
+    "description": "A swivel stool with a curved leather seat and a footrest ring, in counter and bar heights.",
+    "tags": ["bar stool", "kitchen", "swivel", "leather"],
+    "collections": ["bar-stools", "dining-rooms", "sale"],
+    "availableForSale": true,
+    "price": {"amount": "229.00", "currencyCode": "USD"},
+    "compareAtPrice": {"amount": "279.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/amber1/1200/900", "alt": "Amber Bar Stool", "width": 1200, "height": 900},
+      {"url": "https://picsum.photos/seed/amber2/1200/900", "alt": "Amber stool seat detail", "width": 1200, "height": 900}
+    ],
+    "options": [
+      {"name": "Height", "values": ["Counter", "Bar"]},
+      {"name": "Seat", "values": ["Tan Leather", "Black Leather"]}
+    ],
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1014a", "title": "Counter / Tan Leather", "availableForSale": true, "price": {"amount": "229.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "279.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Height", "value": "Counter"}, {"name": "Seat", "value": "Tan Leather"}]},
+      {"id": "gid://shopify/ProductVariant/1014b", "title": "Counter / Black Leather", "availableForSale": true, "price": {"amount": "229.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "279.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Height", "value": "Counter"}, {"name": "Seat", "value": "Black Leather"}]},
+      {"id": "gid://shopify/ProductVariant/1014c", "title": "Bar / Tan Leather", "availableForSale": true, "price": {"amount": "249.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "299.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Height", "value": "Bar"}, {"name": "Seat", "value": "Tan Leather"}]},
+      {"id": "gid://shopify/ProductVariant/1014d", "title": "Bar / Black Leather", "availableForSale": false, "price": {"amount": "249.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "299.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Height", "value": "Bar"}, {"name": "Seat", "value": "Black Leather"}]}
+    ],
+    "details": {
+      "materials": "Steel frame, leather seat, high-density foam.",
+      "seatHeight": "Counter 24 in / Bar 30 in",
+      "swivel": true,
+      "footrest": "Powder-coated steel ring",
+      "assembly": "Seat attaches with four bolts.",
+      "shipping": "Ships in 1–2 weeks."
+    },
+    "content": {
+      "highlightsEyebrow": "The Amber",
+      "highlightsTitle": "Comfortable enough to stay a while.",
+      "highlights": [
+        {"title": "Swivel", "text": "A smooth 360-degree swivel makes it easy to turn toward the conversation."},
+        {"title": "Footrest", "text": "A sturdy steel ring keeps your feet supported through long breakfasts."},
+        {"title": "Heights", "text": "Available in counter and bar height to suit your kitchen."}
+      ]
+    },
+    "reviews": [
+      {"id": "r-1014-01", "author": "Marcus L.", "rating": 5, "title": "Four stools, zero regrets", "body": "Bought four for our island. Swivel is smooth and the leather feels premium for the price.", "date": "2026-09-24T17:00:00Z", "verified": true, "helpful": 6},
+      {"id": "r-1014-02", "author": "Elena K.", "rating": 4, "title": "Good value", "body": "Comfortable and well made. Counter height was perfect for our 36-inch counters.", "date": "2026-09-03T08:20:00Z", "verified": true, "helpful": 3},
+      {"id": "r-1014-03", "author": "Dev P.", "rating": 3, "title": "Squeaks a little", "body": "One of the four squeaks when swiveling. A drop of lubricant fixed it.", "date": "2026-08-15T19:45:00Z", "verified": true, "helpful": 2},
+      {"id": "r-1014-04", "author": "Colleen B.", "rating": 5, "title": "", "body": "Very happy with these.", "date": "2026-07-07T12:25:00Z", "verified": false, "helpful": 0},
+      {"id": "r-1014-05", "author": "Sam T.", "rating": 4, "title": "Solid", "body": "Seat bolts came pre-threaded, so assembly took about five minutes per stool.", "date": "2026-06-01T10:10:00Z", "verified": true, "helpful": 1}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1015",
+    "handle": "calder-loveseat",
+    "title": "Calder Loveseat",
+    "vendor": "Klaussner",
+    "productType": "Loveseat",
+    "description": "A compact two-seater with rolled arms and a soft, slightly slouched back, available in five colors.",
+    "tags": ["sofa", "loveseat", "2 seater", "living room", "upholstered", "small space"],
+    "collections": ["living-room", "sofas", "loveseats", "sale", "new-arrivals"],
+    "availableForSale": true,
+    "price": {"amount": "1299.00", "currencyCode": "USD"},
+    "compareAtPrice": {"amount": "1499.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/calder1/1600/1200", "alt": "Calder Loveseat", "width": 1600, "height": 1200},
+      {"url": "https://picsum.photos/seed/calder2/1600/1200", "alt": "Calder Loveseat arm detail", "width": 1600, "height": 1200},
+      {"url": "https://picsum.photos/seed/calder3/1600/1200", "alt": "Calder Loveseat in a small apartment", "width": 1600, "height": 1200}
+    ],
+    "options": [{"name": "Color", "values": ["Ivory", "Olive", "Terracotta", "Midnight", "Blush"]}],
+    "swatches": {"Ivory": "#EFE9DC", "Olive": "#77783F", "Terracotta": "#B5603E", "Midnight": "#1B2236", "Blush": "#E3C3BC"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1015a", "title": "Ivory", "availableForSale": true, "price": {"amount": "1299.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1499.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Color", "value": "Ivory"}]},
+      {"id": "gid://shopify/ProductVariant/1015b", "title": "Olive", "availableForSale": true, "price": {"amount": "1299.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1499.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Color", "value": "Olive"}]},
+      {"id": "gid://shopify/ProductVariant/1015c", "title": "Terracotta", "availableForSale": true, "price": {"amount": "1349.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1549.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Color", "value": "Terracotta"}]},
+      {"id": "gid://shopify/ProductVariant/1015d", "title": "Midnight", "availableForSale": false, "price": {"amount": "1349.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1549.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Color", "value": "Midnight"}]},
+      {"id": "gid://shopify/ProductVariant/1015e", "title": "Blush", "availableForSale": true, "price": {"amount": "1349.00", "currencyCode": "USD"}, "compareAtPrice": {"amount": "1549.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Color", "value": "Blush"}]}
+    ],
+    "details": {
+      "materials": "Hardwood frame, high-resilience foam, polyester chenille upholstery.",
+      "dimensions": "W 62in × D 36in × H 34in",
+      "seatHeight": "18in",
+      "seatDepth": "22in",
+      "weight": "88 lb",
+      "assembly": "Legs screw in, no tools needed.",
+      "shipping": "Ships in 2–3 weeks.",
+      "care": "Vacuum weekly. Spot clean with mild soap and water.",
+      "warranty": "Limited manufacturer warranty.",
+      "packingDetails": [
+        {"package": "Box 1 of 1 — Loveseat", "dimensions": "64 × 38 × 36 in", "weight": "96 lb"}
+      ]
+    },
+    "content": {
+      "highlightsEyebrow": "The Calder",
+      "highlightsTitle": "Big comfort, small footprint.",
+      "highlights": [
+        {"number": "01", "title": "Scale", "text": "At 62 inches wide it fits through standard doors and into smaller rooms."},
+        {"number": "02", "title": "Color", "text": "Five colors, from calm Ivory to deep Midnight, so it can blend in or stand out."},
+        {"number": "03", "title": "Arms", "text": "Softly rolled arms are comfortable to lean on and easy to rest a book against."}
+      ],
+      "story": {
+        "eyebrow": "Small spaces",
+        "title": "Made for apartments, studies and cozy corners.",
+        "text": "The Calder proves a compact sofa does not have to feel like a compromise, with generous cushioning and a relaxed silhouette in every color."
+      },
+      "detailsEyebrow": "Specifications",
+      "detailsTitle": "The details, at a glance."
+    },
+    "reviews": [
+      {"id": "r-1015-01", "author": "Jasmine O.", "rating": 5, "title": "Terracotta is stunning", "body": "Pops against our white walls. Fit through our narrow stairwell without any trouble.", "date": "2026-09-28T15:50:00Z", "verified": true, "helpful": 9},
+      {"id": "r-1015-02", "author": "Ben H.", "rating": 4, "title": "Great for an apartment", "body": "Sits two adults comfortably. Rolled arms are a nice touch.", "date": "2026-09-11T10:30:00Z", "verified": true, "helpful": 4},
+      {"id": "r-1015-03", "author": "Tania R.", "rating": 5, "title": "Soft chenille", "body": "The chenille is so soft. My cat agrees.", "date": "2026-08-27T20:40:00Z", "verified": true, "helpful": 3},
+      {"id": "r-1015-04", "author": "Walter G.", "rating": 3, "title": "Back is quite slouchy", "body": "Comfortable for lounging, but the slouched back may not suit everyone. Good build quality regardless.", "date": "2026-08-05T11:15:00Z", "verified": true, "helpful": 5},
+      {"id": "r-1015-05", "author": "Priscilla A.", "rating": 5, "title": "", "body": "Perfect size, perfect color.", "date": "2026-07-13T18:05:00Z", "verified": false, "helpful": 1},
+      {"id": "r-1015-06", "author": "Noah K.", "rating": 4, "title": "Easy setup", "body": "Legs screwed in without tools. Looks more expensive than it is.", "date": "2026-06-22T09:00:00Z", "verified": true, "helpful": 0}
+    ]
+  },
+  {
+    "id": "gid://shopify/Product/1016",
+    "handle": "fenn-modular-sofa",
+    "title": "Fenn Modular Sofa",
+    "vendor": "Atelier North",
+    "productType": "Sofa",
+    "description": "A low, modular sofa with a deep seat, offered in bouclé, velvet or full-grain leather.",
+    "tags": ["sofa", "modular", "living room", "3 seater", "leather", "velvet", "boucle"],
+    "collections": ["living-room", "sofas", "3-seater-sofa", "new-arrivals", "featured"],
+    "availableForSale": true,
+    "price": {"amount": "2490.00", "currencyCode": "USD"},
+    "images": [
+      {"url": "https://picsum.photos/seed/fenn1/1800/1350", "alt": "Fenn Modular Sofa", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/fenn2/1800/1350", "alt": "Fenn sofa leather detail", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/fenn3/1800/1350", "alt": "Fenn sofa bouclé detail", "width": 1800, "height": 1350},
+      {"url": "https://picsum.photos/seed/fenn4/1800/1350", "alt": "Fenn sofa styled", "width": 1800, "height": 1350}
+    ],
+    "options": [
+      {"name": "Fabric", "values": ["Bouclé", "Velvet", "Leather"]},
+      {"name": "Color", "values": ["Cream", "Charcoal"]}
+    ],
+    "swatches": {"Cream": "#EFE5D2", "Charcoal": "#3A3A3C"},
+    "variants": [
+      {"id": "gid://shopify/ProductVariant/1016a", "title": "Bouclé / Cream", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Bouclé"}, {"name": "Color", "value": "Cream"}]},
+      {"id": "gid://shopify/ProductVariant/1016b", "title": "Bouclé / Charcoal", "availableForSale": true, "selectedOptions": [{"name": "Fabric", "value": "Bouclé"}, {"name": "Color", "value": "Charcoal"}]},
+      {"id": "gid://shopify/ProductVariant/1016c", "title": "Velvet / Cream", "availableForSale": true, "price": {"amount": "2690.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Cream"}]},
+      {"id": "gid://shopify/ProductVariant/1016d", "title": "Velvet / Charcoal", "availableForSale": true, "price": {"amount": "2690.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Velvet"}, {"name": "Color", "value": "Charcoal"}]},
+      {"id": "gid://shopify/ProductVariant/1016e", "title": "Leather / Cream", "availableForSale": false, "price": {"amount": "3190.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Leather"}, {"name": "Color", "value": "Cream"}]},
+      {"id": "gid://shopify/ProductVariant/1016f", "title": "Leather / Charcoal", "availableForSale": true, "price": {"amount": "3190.00", "currencyCode": "USD"}, "selectedOptions": [{"name": "Fabric", "value": "Leather"}, {"name": "Color", "value": "Charcoal"}]}
+    ],
+    "details": {
+      "materials": "Plantation hardwood frame, webbing suspension, down-wrapped foam.",
+      "width": "104 in",
+      "depth": "42 in",
+      "height": "29 in",
+      "seatHeight": "16 in",
+      "weight": "162 lb",
+      "modules": "Three modules, reconfigurable",
+      "assembly": "Modules connect with hidden steel clips.",
+      "shipping": "White-glove delivery in 6–8 weeks.",
+      "warranty": "5-year limited frame warranty.",
+      "fabricGuide": {
+        "columns": ["Fabric", "Feel", "Care", "Price"],
+        "rows": [
+          ["Bouclé", "Textured, cozy", "Spot clean only", "Base"],
+          ["Velvet", "Soft, rich sheen", "Vacuum, blot spills", "+ $200"],
+          ["Leather", "Smooth, ages beautifully", "Condition twice a year", "+ $700"]
+        ]
+      }
+    },
+    "content": {
+      "highlightsEyebrow": "The Fenn",
+      "highlightsTitle": "Low, long and endlessly rearranged.",
+      "highlightsText": "Three modules, three materials, many layouts.",
+      "highlights": [
+        {"number": "01", "title": "Modular", "text": "Three connecting modules can sit in a line, an L or a loose arrangement."},
+        {"number": "02", "title": "Materials", "text": "Choose between textured bouclé, soft velvet or full-grain leather."},
+        {"number": "03", "title": "Seat", "text": "A deep, low seat designed for lounging rather than perching."},
+        {"number": "04", "title": "Color", "text": "Two grounded neutrals that work with almost any palette."}
+      ],
+      "sections": [
+        {
+          "eyebrow": "Leather",
+          "title": "Full-grain, made to age.",
+          "text": "The leather option is full-grain and finished lightly, so it softens and develops character over the years.",
+          "image": {"url": "https://picsum.photos/seed/fennleather/1600/1200", "alt": "Fenn leather detail", "width": 1600, "height": 1200}
+        },
+        {
+          "eyebrow": "Bouclé",
+          "title": "Texture you want to touch.",
+          "text": "A tightly looped bouclé adds depth and warmth, especially in the Cream colorway."
+        }
+      ],
+      "detailsEyebrow": "Specifications",
+      "detailsTitle": "Pick your material.",
+      "relatedTitle": "Styled with"
+    },
+    "reviews": [
+      {"id": "r-1016-01", "author": "Léa M.", "rating": 5, "title": "Reconfigured it three times already", "body": "We started in a straight line, then switched to an L when friends came over. Hidden clips hold everything firmly in place.", "date": "2026-09-21T13:15:00Z", "verified": true, "helpful": 11},
+      {"id": "r-1016-02", "author": "Oskar B.", "rating": 4, "title": "Leather is gorgeous", "body": "Charcoal leather feels like it will age beautifully. Low seat takes some getting used to for taller folks.", "date": "2026-08-31T18:30:00Z", "verified": true, "helpful": 6},
+      {"id": "r-1016-03", "author": "Grace T.", "rating": 3, "title": "Long lead time", "body": "Lovely sofa, but the 6–8 week delivery stretched to ten. Quality made up for it, mostly.", "date": "2026-08-09T09:40:00Z", "verified": true, "helpful": 4},
+      {"id": "r-1016-04", "author": "Ravi N.", "rating": 5, "title": "", "body": "Bouclé Cream is divine.", "date": "2026-07-15T20:00:00Z", "verified": false, "helpful": 1}
+    ]
+  }
+]
