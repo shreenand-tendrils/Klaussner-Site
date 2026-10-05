@@ -1,26 +1,31 @@
-// TEMPORARY debug version: shows the real error in the browser instead of a generic 500.
-// Must be the FIRST import: Hydrogen calls `caches.open()` (Oxygen API), which Node lacks.
-import '../vercel/caches.js';
-import {waitUntil} from '@vercel/functions';
+// Vercel Node function that serves the Hydrogen server bundle from dist/server.
+import '../vercel/caches.js'; // must stay first: Hydrogen calls `caches.open()` (Oxygen API)
 
-let serverPromise;
-const loadServer = () =>
-  (serverPromise ??= import('../dist/server/index.js').then((m) => m.default));
+let ready;
+
+async function boot() {
+  let waitUntil = (promise) => Promise.resolve(promise).catch(() => {});
+  try {
+    ({waitUntil} = await import('@vercel/functions'));
+  } catch {
+    // Package not installed: background tasks just run without waitUntil.
+  }
+  const {default: server} = await import('../dist/server/index.js');
+  return {server, waitUntil};
+}
 
 export default {
   async fetch(request) {
     try {
-      const server = await loadServer();
+      const {server, waitUntil} = await (ready ??= boot());
       return await server.fetch(request, process.env, {
         waitUntil,
         passThroughOnException() {},
       });
     } catch (error) {
+      ready = undefined;
       console.error(error);
-      return new Response(`Function error:\n\n${error?.stack || error}`, {
-        status: 500,
-        headers: {'content-type': 'text/plain; charset=utf-8'},
-      });
+      return new Response('An unexpected error occurred', {status: 500});
     }
   },
 };
