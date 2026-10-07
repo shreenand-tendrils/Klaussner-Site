@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 
 function Icon({name}) {
   const common = {
@@ -42,11 +42,84 @@ function Icon({name}) {
   return null;
 }
 
-export function ProductGallery({images = [], title = 'Product'}) {
-  const usableImages = images.filter((image) => image?.url);
+/* Accepts plain images ({url}) and videos:
+ *  - file video:     {type:'video', sources:[{url}], previewImage:{url}}  (or {type:'video', url, poster})
+ *  - YouTube/Vimeo:  {type:'external_video', embedUrl, previewImage:{url}}
+ */
+function normalize(m) {
+  if (!m) return null;
+  const type = String(m.type || m.mediaContentType || '').toLowerCase();
+  const poster = m.poster || m.previewImage?.url;
+  if (type === 'video' || m.sources) {
+    const src = m.sources?.[0]?.url || m.url;
+    return src ? {...m, kind: 'video', src, poster} : null;
+  }
+  if (type === 'external_video' || m.embedUrl) {
+    return m.embedUrl ? {...m, kind: 'embed', src: m.embedUrl, poster} : null;
+  }
+  return m.url ? {...m, kind: 'image', poster: m.url} : null;
+}
+
+function Player({item, title}) {
+  if (item.kind === 'embed') {
+    return (
+      <iframe
+        key={item.src}
+        src={item.src}
+        title={`${title} video`}
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+        className="h-full w-full border-0"
+      />
+    );
+  }
+  return (
+    <video
+      key={item.src}
+      src={item.src}
+      poster={item.poster}
+      controls
+      playsInline
+      preload="metadata"
+      className="h-full w-full bg-black object-contain"
+    />
+  );
+}
+
+/* hotspots: [{image: 0, x: 42, y: 30, title: 'Power recline', text: '...'}]  (x/y = % of the photo; image = index in images, default 0)
+ * An image object can also carry its own `hotspots` array. */
+export function ProductGallery({images = [], title = 'Product', hotspots = []}) {
+  const usableImages = images.map(normalize).filter(Boolean);
   const [active, setActive] = useState(0);
   const [zoomed, setZoomed] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [openSpot, setOpenSpot] = useState(null);
+  const [frameEl, setFrameEl] = useState(null);
+  const [frame, setFrame] = useState({w: 0, h: 0});
+  const [nat, setNat] = useState(null);
+
+  const railRef = useRef(null);
+
+  useEffect(() => setOpenSpot(null), [active]);
+
+  // keep the active thumbnail visible inside the (horizontally) scrolling strip
+  useEffect(() => {
+    railRef.current?.querySelector('[aria-current="true"]')?.scrollIntoView({block: 'nearest', inline: 'nearest', behavior: 'smooth'});
+  }, [active]);
+
+  // Track the photo frame size so dots stay glued to the right spot even when object-cover crops the image.
+  useEffect(() => {
+    if (!frameEl) return undefined;
+    const ro = new ResizeObserver(([e]) => setFrame({w: e.contentRect.width, h: e.contentRect.height}));
+    ro.observe(frameEl);
+    return () => ro.disconnect();
+  }, [frameEl]);
+
+  const onImg = (el) => {
+    if (el?.complete && el.naturalWidth) {
+      setNat((p) => (p && p.w === el.naturalWidth && p.h === el.naturalHeight ? p : {w: el.naturalWidth, h: el.naturalHeight}));
+    }
+  };
 
   useEffect(() => {
     setActive(0);
@@ -84,36 +157,177 @@ export function ProductGallery({images = [], title = 'Product'}) {
 
   const current = usableImages[active] || usableImages[0];
 
+  const spots =
+    current.kind === 'image'
+      ? (Array.isArray(current.hotspots)
+          ? current.hotspots
+          : (Array.isArray(hotspots) ? hotspots : []).filter((h) => (h.image ?? 0) === active)
+        ).filter((h) => Number.isFinite(h?.x) && Number.isFinite(h?.y) && h.title)
+      : [];
+
+  const place = (s) => {
+    if (!frame.w || !frame.h || !nat) return null;
+    const k = Math.max(frame.w / nat.w, frame.h / nat.h); // object-cover scale
+    const dw = nat.w * k;
+    const dh = nat.h * k;
+    const left = (frame.w - dw) / 2 + (s.x / 100) * dw;
+    const top = (frame.h - dh) / 2 + (s.y / 100) * dh;
+    if (left < 0 || top < 0 || left > frame.w || top > frame.h) return null; // cropped out at this size
+    return {left: (left / frame.w) * 100, top: (top / frame.h) * 100};
+  };
+
   return (
     <div className="min-w-0">
-      {/* Gallery Header Actions */}
-      <div className="mb-4 flex items-center justify-end gap-3 sm:mb-5">
-        <button
-          type="button"
-          onClick={() => setSaved((v) => !v)}
-          aria-pressed={saved}
-          aria-label={saved ? 'Remove from wishlist' : 'Add to wishlist'}
-          className={`inline-flex items-center gap-2 rounded-sm px-2.5 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.1em] transition-colors ${
-            saved ? 'text-rose-600 bg-rose-50/50' : 'text-[var(--color-muted)] hover:text-[var(--color-ink)]'
-          }`}
-        >
-          <Icon name="heart" />
-          <span className="hidden sm:inline">{saved ? 'Saved' : 'Save'}</span>
-        </button>
+      {/* Main Layout: Thumbnails + Main View */}
+      <div
+        className={
+          usableImages.length > 1
+            ? 'grid min-w-0 grid-cols-1 gap-3 sm:grid-cols-[76px_minmax(0,1fr)] sm:gap-4'
+            : 'block'
+        }
+      >
+        {/* Thumbnail rail */}
+        {usableImages.length > 1 && (
+          <div
+            ref={railRef}
+            className="order-2 flex min-w-0 snap-x flex-row gap-2.5 overflow-x-auto overflow-y-hidden pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:order-1 sm:max-h-[420px] sm:snap-none sm:flex-col sm:overflow-x-hidden sm:overflow-y-auto sm:pb-0 sm:pr-1 lg:max-h-[min(calc(100vh-14rem),540px)]"
+          >
+            {usableImages.map((image, index) => (
+              <button
+                key={`${image.url ?? image.src}-${index}`}
+                type="button"
+                onClick={() => setActive(index)}
+                onPointerEnter={(e) => e.pointerType === 'mouse' && setActive(index)}
+                aria-current={index === active ? 'true' : undefined}
+                aria-label={`Show image ${index + 1}`}
+                className={`
+                  relative h-[64px] w-[76px] shrink-0 snap-start overflow-hidden rounded-sm border bg-[var(--color-sand)] p-0 transition-all duration-200
+                  sm:h-[84px] sm:w-[76px]
+                  ${
+                    index === active
+                      ? 'border-[var(--color-ink)] ring-1 ring-[var(--color-ink)] opacity-100 shadow-sm'
+                      : 'border-transparent opacity-60 hover:opacity-100'
+                  }
+                `}
+              >
+                {image.poster && (
+                  <img
+                    src={image.poster}
+                    alt=""
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
+                )}
+                {image.kind !== 'image' && (
+                  <span className="absolute inset-0 grid place-items-center bg-black/25 text-white">
+                    <span className="grid h-7 w-7 place-items-center rounded-full bg-black/60 text-[.6rem]">▶</span>
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
+        )}
 
-        <button
-          type="button"
-          onClick={() => setZoomed(true)}
-          aria-label="Open product image viewer"
-          className="inline-flex items-center gap-2 rounded-sm px-2.5 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"
-        >
-          <Icon name="zoom" />
-          <span className="hidden sm:inline">Zoom</span>
-        </button>
+        {/* Main active image: actions float on top, height capped to viewport */}
+        <div ref={setFrameEl} className="relative order-1 min-w-0 sm:order-2">
+          {current.kind === 'image' ? (
+          <button
+            type="button"
+            onClick={() => setZoomed(true)}
+            aria-label={`View ${title} image larger`}
+            className="group relative block w-full min-w-0 cursor-zoom-in overflow-hidden rounded-sm border-0 bg-[var(--color-sand)] p-0 text-left shadow-sm"
+          >
+            <img
+              src={current.url}
+              alt={current.alt || title}
+              width={current.width || 1600}
+              height={current.height || 1200}
+              fetchPriority="high"
+              ref={onImg}
+              onLoad={(e) => onImg(e.currentTarget)}
+              className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] lg:aspect-auto lg:h-[min(calc(100vh-14rem),540px)] lg:min-h-[380px]"
+            />
 
-        <button
-          type="button"
-          onClick={async () => {
+            {usableImages.length > 1 && (
+              <span className="absolute bottom-3 left-3 rounded-sm bg-black/60 px-3 py-1 text-[0.65rem] font-medium tracking-[0.12em] text-white backdrop-blur-md">
+                {active + 1} / {usableImages.length}
+              </span>
+            )}
+          </button>
+          ) : (
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm bg-black shadow-sm lg:aspect-auto lg:h-[min(calc(100vh-14rem),540px)] lg:min-h-[380px]">
+              <Player item={current} title={title} />
+              {usableImages.length > 1 && (
+              <span className="pointer-events-none absolute left-3 top-3 rounded-sm bg-black/60 px-3 py-1 text-[0.65rem] font-medium tracking-[0.12em] text-white backdrop-blur-md">
+                {active + 1} / {usableImages.length}
+              </span>
+              )}
+            </div>
+          )}
+
+          {/* Hotspots: pulsing dots, details on hover / tap */}
+          {spots.length > 0 && (
+            <div className="pointer-events-none absolute inset-0 z-[3]">
+              {spots.map((s, i) => {
+                const p = place(s);
+                if (!p) return null;
+                const open = openSpot === i;
+                const side = p.left > 55 ? 'right-full mr-3' : 'left-full ml-3';
+                const vert = p.top < 25 ? 'top-0' : p.top > 75 ? 'bottom-0' : 'top-1/2 -translate-y-1/2';
+                return (
+                  <div
+                    key={`${s.title}-${i}`}
+                    style={{left: `${p.left}%`, top: `${p.top}%`}}
+                    className={`pointer-events-auto absolute -translate-x-1/2 -translate-y-1/2 ${open ? 'z-10' : ''}`}
+                    onPointerEnter={(e) => e.pointerType === 'mouse' && setOpenSpot(i)}
+                    onPointerLeave={(e) => e.pointerType === 'mouse' && setOpenSpot(null)}
+                  >
+                    <button
+                      type="button"
+                      aria-label={s.title}
+                      aria-expanded={open}
+                      onClick={(e) =>
+                        setOpenSpot((o) => (o === i && e.nativeEvent.pointerType !== 'mouse' ? null : i))
+                      }
+                      onBlur={() => setOpenSpot((o) => (o === i ? null : o))}
+                      className="relative grid h-7 w-7 place-items-center rounded-full bg-white/95 shadow-md ring-1 ring-black/10 transition hover:scale-110"
+                    >
+                      {!open && <span aria-hidden="true" className="absolute inset-0 animate-ping rounded-full bg-white/70" />}
+                      <span className="relative h-2.5 w-2.5 rounded-full bg-emerald-600" />
+                    </button>
+                    {open && (
+                      <div
+                        role="tooltip"
+                        className={`absolute w-56 rounded-sm bg-[var(--color-surface)] p-3.5 text-left shadow-xl ring-1 ring-black/10 ${side} ${vert}`}
+                      >
+                        <p className="m-0 text-[.72rem] font-bold uppercase tracking-[.14em] text-[var(--color-ink)]">{s.title}</p>
+                        {s.text && (
+                          <p className="mb-0 mt-1.5 text-[.82rem] leading-6 text-[var(--color-ink)]/80">{s.text}</p>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          <div className="absolute right-3 top-3 z-[2] flex flex-col gap-2">
+            <button
+              type="button"
+              onClick={() => setSaved((v) => !v)}
+              aria-pressed={saved}
+              aria-label={saved ? 'Remove from wishlist' : 'Add to wishlist'}
+              className={`grid h-10 w-10 place-items-center rounded-full bg-white/90 text-[var(--color-ink)] shadow-sm backdrop-blur transition hover:bg-white [&_svg]:h-[18px] [&_svg]:w-[18px] ${saved ? '!bg-rose-50 !text-rose-600' : ''}`}
+            >
+              <Icon name="heart" />
+            </button>
+            <button type="button" onClick={() => setZoomed(true)} aria-label="Open product image viewer" className="grid h-10 w-10 place-items-center rounded-full bg-white/90 text-[var(--color-ink)] shadow-sm backdrop-blur transition hover:bg-white [&_svg]:h-[18px] [&_svg]:w-[18px]">
+              <Icon name="zoom" />
+            </button>
+            <button
+              type="button"
+              onClick={async () => {
             try {
               if (navigator.share) {
                 await navigator.share({title, text: `View ${title}`});
@@ -123,74 +337,12 @@ export function ProductGallery({images = [], title = 'Product'}) {
             } catch {}
           }}
           aria-label="Share product"
-          className="inline-flex items-center gap-2 rounded-sm px-2.5 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.1em] text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"
-        >
-          <Icon name="share" />
-          <span className="hidden sm:inline">Share</span>
-        </button>
-      </div>
-
-      {/* Main Layout: Thumbnails + Main View */}
-      <div
-        className={
-          usableImages.length > 1
-            ? 'grid min-w-0 grid-cols-[72px_minmax(0,1fr)] gap-3.5 sm:grid-cols-[92px_minmax(0,1fr)] sm:gap-5'
-            : 'block'
-        }
-      >
-        {/* Thumbnail rail */}
-        {usableImages.length > 1 && (
-          <div className="flex max-h-[min(78vh,720px)] min-w-0 flex-col gap-2.5 overflow-y-auto pr-1">
-            {usableImages.map((image, index) => (
-              <button
-                key={`${image.url}-${index}`}
-                type="button"
-                onClick={() => setActive(index)}
-                aria-current={index === active ? 'true' : undefined}
-                aria-label={`Show image ${index + 1}`}
-                className={`
-                  relative h-[80px] w-[72px] shrink-0 overflow-hidden rounded-sm border bg-[var(--color-sand)] p-0 transition-all duration-200
-                  sm:h-[102px] sm:w-[92px]
-                  ${
-                    index === active
-                      ? 'border-[var(--color-ink)] ring-1 ring-[var(--color-ink)] opacity-100 shadow-sm'
-                      : 'border-transparent opacity-60 hover:opacity-100'
-                  }
-                `}
-              >
-                <img
-                  src={image.url}
-                  alt=""
-                  loading="lazy"
-                  className="h-full w-full object-cover"
-                />
-              </button>
-            ))}
+              className="grid h-10 w-10 place-items-center rounded-full bg-white/90 text-[var(--color-ink)] shadow-sm backdrop-blur transition hover:bg-white [&_svg]:h-[18px] [&_svg]:w-[18px]"
+            >
+              <Icon name="share" />
+            </button>
           </div>
-        )}
-
-        {/* Main active image */}
-        <button
-          type="button"
-          onClick={() => setZoomed(true)}
-          aria-label={`View ${title} image larger`}
-          className="group relative block min-w-0 overflow-hidden rounded-sm border-0 bg-[var(--color-sand)] p-0 text-left shadow-sm"
-        >
-          <img
-            src={current.url}
-            alt={current.alt || title}
-            width={current.width || 1600}
-            height={current.height || 1600}
-            fetchPriority="high"
-            className="aspect-[4/3] h-auto w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] sm:aspect-[1/1.04]"
-          />
-
-          {usableImages.length > 1 && (
-            <span className="absolute bottom-3.5 right-3.5 rounded-sm bg-black/60 px-3 py-1 text-[0.65rem] font-medium tracking-[0.12em] text-white backdrop-blur-md">
-              {active + 1} / {usableImages.length}
-            </span>
-          )}
-        </button>
+        </div>
       </div>
 
       <p className="mt-3 text-[0.68rem] leading-relaxed text-[var(--color-muted)]">
@@ -217,11 +369,17 @@ export function ProductGallery({images = [], title = 'Product'}) {
             ×
           </button>
 
-          <img
-            src={current.url}
-            alt={current.alt || title}
-            className="max-h-[85vh] max-w-[94vw] rounded-sm object-contain shadow-2xl"
-          />
+          {current.kind === 'image' ? (
+            <img
+              src={current.url}
+              alt={current.alt || title}
+              className="max-h-[85vh] max-w-[94vw] rounded-sm object-contain shadow-2xl"
+            />
+          ) : (
+            <div className="aspect-video max-h-[85vh] w-[min(94vw,1100px)] overflow-hidden rounded-sm shadow-2xl">
+              <Player item={current} title={title} />
+            </div>
+          )}
 
           {usableImages.length > 1 && (
             <div className="absolute bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-4 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-xs tracking-widest text-white backdrop-blur-md">

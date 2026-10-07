@@ -69,7 +69,7 @@ export function ProductForm({product, showPrice = false}) {
   };
 
   return (
-    <div id="product-purchase" className="space-y-8">
+    <div id="product-purchase" className="space-y-6">
       {/* Live price (ProductView me showPrice pass karo) */}
       {showPrice && price && (
         <div className="flex flex-wrap items-baseline gap-3">

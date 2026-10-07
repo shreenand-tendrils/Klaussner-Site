@@ -5,6 +5,7 @@ import {ProductMore} from '~/components/product/ProductMore';
 import {ProductReviews, RatingSummary, summarizeReviews} from '~/components/product/ProductReviews';
 import {ProductSpecs} from '~/components/product/ProductSpecs';
 import {formatMoney} from '~/lib/format';
+import {useCompactHeader} from '~/components/layout/NavContext';
 
 function DynamicList({items}) {
   if (!items?.length) return null;
@@ -14,22 +15,22 @@ function DynamicList({items}) {
       {items.map((item, index) => (
         <div
           key={`${item.title}-${index}`}
-          className="group flex flex-col border border-[var(--color-line)] bg-[var(--color-surface)] p-8 transition duration-300 hover:-translate-y-1 hover:border-emerald-600 hover:shadow-[0_18px_40px_rgba(15,36,23,.08)] sm:p-9"
+          className="group flex flex-col border border-[var(--color-line)] bg-[var(--color-surface)] p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-600 hover:shadow-[0_18px_40px_rgba(15,36,23,.08)] sm:p-7"
         >
           {item.number && (
-            <span className="mb-10 block font-display text-[3rem] font-medium leading-none tracking-[-.03em] text-emerald-600">
+            <span className="mb-5 block font-display text-[2.2rem] font-medium leading-none tracking-[-.03em] text-emerald-600">
               {item.number}
             </span>
           )}
 
           {item.title && (
-            <h3 className="text-[1.05rem] font-bold uppercase tracking-[.14em] text-[var(--color-ink)]">
+            <h3 className="text-[.9rem] font-bold uppercase tracking-[.14em] text-[var(--color-ink)]">
               {item.title}
             </h3>
           )}
 
           {item.text && (
-            <p className="mt-4 text-[1.05rem] leading-relaxed text-[var(--color-muted)]">
+            <p className="mt-3 text-[.92rem] leading-7 text-[var(--color-muted)]">
               {item.text}
             </p>
           )}
@@ -94,10 +95,10 @@ function ProductMeta({product}) {
     <div className="grid grid-cols-2 gap-x-8 gap-y-4 border-y border-[var(--color-line)] py-5 sm:grid-cols-3">
       {items.map((item) => (
         <div key={item.label}>
-          <span className="block text-[.62rem] font-medium uppercase tracking-[.13em] text-[var(--color-muted)]">
+          <span className="block text-[.64rem] font-semibold uppercase tracking-[.13em] text-[var(--color-ink)]/60">
             {item.label}
           </span>
-          <span className="mt-1.5 block text-[.84rem] text-[var(--color-ink)] sm:text-[.9rem]">
+          <span className="mt-1.5 block text-[.92rem] font-medium text-[var(--color-ink)]">
             {item.value}
           </span>
         </div>
@@ -116,7 +117,7 @@ function ProductTags({product}) {
       {tags.map((tag) => (
         <span
           key={tag}
-          className="border border-[var(--color-line)] px-3 py-2 text-[.62rem] uppercase tracking-[.1em] text-[var(--color-muted)]"
+          className="border border-[var(--color-ink)]/20 px-3 py-2 text-[.66rem] font-medium uppercase tracking-[.1em] text-[var(--color-ink)]/80"
         >
           {tag}
         </span>
@@ -140,8 +141,8 @@ function ProductContent({product}) {
     <>
       {/* Product highlights */}
       {Array.isArray(highlights) && highlights.length > 0 && (
-        <section className="mx-auto w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] py-20 sm:py-28 lg:py-36">
-          <div className="mb-12 flex flex-col gap-6 sm:mb-16 lg:flex-row lg:items-end lg:justify-between">
+        <section className="mx-auto w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] py-12 sm:py-16 lg:py-20">
+          <div className="mb-8 flex flex-col gap-4 sm:mb-10 lg:flex-row lg:items-end lg:justify-between">
             <div>
               {content.highlightsEyebrow && (
                 <span className="block text-[.78rem] font-semibold uppercase tracking-[.2em] text-emerald-600">
@@ -150,14 +151,14 @@ function ProductContent({product}) {
               )}
 
               {content.highlightsTitle && (
-                <h2 className="mt-3 font-display text-[clamp(3rem,6vw,6rem)] font-medium leading-[.9] tracking-[-.04em]">
+                <h2 className="mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-medium leading-[1.05] tracking-[-.03em]">
                   {content.highlightsTitle}
                 </h2>
               )}
             </div>
 
             {highlightsText && (
-              <p className="max-w-[34ch] text-[1.15rem] leading-relaxed text-[var(--color-muted)]">
+              <p className="max-w-[44ch] text-[1rem] leading-7 text-[var(--color-muted)]">
                 {highlightsText}
               </p>
             )}
@@ -171,8 +172,8 @@ function ProductContent({product}) {
       {story && (story.title || story.text || story.image) && (
         <section className="bg-[var(--color-sand)]">
           <div
-            className={`mx-auto grid w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] grid-cols-1 gap-12 py-20 sm:gap-16 sm:py-28 lg:py-36 ${
-              story.image ? 'lg:grid-cols-2 lg:items-center' : 'lg:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] lg:items-end lg:gap-24'
+            className={`mx-auto grid w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] grid-cols-1 gap-8 py-12 sm:gap-10 sm:py-16 lg:py-20 ${
+              story.image ? 'lg:grid-cols-2 lg:items-center' : 'text-center'
             }`}
           >
             <div className={story.image ? 'order-2 lg:order-1' : ''}>
@@ -183,20 +184,20 @@ function ProductContent({product}) {
               )}
 
               {story.title && (
-                <h2 className="mt-4 max-w-[14ch] font-display text-[clamp(3rem,6vw,6.5rem)] font-medium leading-[.9] tracking-[-.045em]">
+                <h2 className={`mt-4 max-w-[20ch] font-display text-[clamp(2rem,4vw,3.25rem)] font-medium leading-[1.05] tracking-[-.03em] ${story.image ? '' : 'mx-auto'}`}>
                   {story.title}
                 </h2>
               )}
 
               {story.image && story.text && (
-                <div className="mt-8 max-w-[56ch] text-[1.15rem] leading-9 text-[var(--color-muted)] sm:text-[1.25rem]">
+                <div className="mt-5 max-w-[56ch] text-[.98rem] leading-8 text-[var(--color-muted)] sm:text-[1.02rem]">
                   {story.text}
                 </div>
               )}
             </div>
 
             {!story.image && story.text && (
-              <div className="border-l-2 border-emerald-600 pl-8 text-[1.2rem] leading-9 text-[var(--color-muted)] sm:text-[1.35rem] sm:leading-10">
+              <div className="mx-auto max-w-[62ch] text-[1rem] leading-8 text-[var(--color-muted)] sm:text-[1.05rem]">
                 {story.text}
               </div>
             )}
@@ -228,9 +229,9 @@ function ProductContent({product}) {
             key={`${section.title}-${index}`}
             className={`border-t border-[var(--color-line)] ${isEven ? '' : 'bg-[var(--color-surface)]'}`}
           >
-            <div className="mx-auto w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] py-20 sm:py-28 lg:py-32">
+            <div className="mx-auto w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] py-12 sm:py-16 lg:py-20">
               {hasImage ? (
-                <div className={`grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center lg:gap-20 ${isEven ? '' : 'lg:grid-flow-dense'}`}>
+                <div className={`grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:gap-14 ${isEven ? '' : 'lg:grid-flow-dense'}`}>
                   <div className={isEven ? '' : 'lg:col-start-2'}>
                     {section.eyebrow && (
                       <span className="block text-[.78rem] font-semibold uppercase tracking-[.2em] text-emerald-600">
@@ -238,12 +239,12 @@ function ProductContent({product}) {
                       </span>
                     )}
                     {section.title && (
-                      <h2 className="mt-3 max-w-[14ch] font-display text-[clamp(2.8rem,5vw,5.2rem)] font-medium leading-[.92] tracking-[-.04em]">
+                      <h2 className="mt-3 max-w-[20ch] font-display text-[clamp(2rem,3.6vw,3rem)] font-medium leading-[1.05] tracking-[-.03em]">
                         {section.title}
                       </h2>
                     )}
                     {body && (
-                      <div className="mt-7 max-w-[60ch] text-[1.15rem] leading-9 text-[var(--color-muted)] sm:text-[1.22rem]">
+                      <div className="mt-4 max-w-[60ch] text-[.98rem] leading-8 text-[var(--color-muted)] sm:text-[1.02rem]">
                         {body}
                       </div>
                     )}
@@ -261,21 +262,18 @@ function ProductContent({product}) {
                   </div>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-start lg:gap-24">
-                  <div>
-                    <span className="block font-mono text-[.9rem] tracking-[.2em] text-emerald-600">
-                      {String(index + 1).padStart(2, '0')}
-                      {section.eyebrow ? ` — ${section.eyebrow}` : ''}
-                    </span>
-                    {section.title && (
-                      <h2 className="mt-5 max-w-[12ch] font-display text-[clamp(2.8rem,5.5vw,5.6rem)] font-medium leading-[.92] tracking-[-.04em]">
-                        {section.title}
-                      </h2>
-                    )}
-                  </div>
-
+                <div className="mx-auto max-w-3xl text-center">
+                  <span className="block font-mono text-[.85rem] tracking-[.2em] text-emerald-600">
+                    {String(index + 1).padStart(2, '0')}
+                    {section.eyebrow ? ` — ${section.eyebrow}` : ''}
+                  </span>
+                  {section.title && (
+                    <h2 className="mx-auto mt-4 max-w-[22ch] font-display text-[clamp(2rem,3.6vw,3rem)] font-medium leading-[1.05] tracking-[-.03em]">
+                      {section.title}
+                    </h2>
+                  )}
                   {body && (
-                    <div className="border-t border-[var(--color-ink)] pt-8 text-[1.2rem] leading-9 text-[var(--color-muted)] sm:text-[1.3rem] sm:leading-10 lg:mt-3">
+                    <div className="mx-auto mt-6 max-w-[62ch] border-t border-[var(--color-line)] pt-6 text-[1rem] leading-8 text-[var(--color-muted)] sm:text-[1.05rem]">
                       {body}
                     </div>
                   )}
@@ -290,6 +288,7 @@ function ProductContent({product}) {
 }
 
 export function ProductView({product, related = [], more = [], onSubmitReview}) {
+  useCompactHeader(); // header opens as the floating pill on product pages
   const content = product.content ?? {};
   const reviews = Array.isArray(product.reviews) ? product.reviews : [];
   const ratings = summarizeReviews(reviews);
@@ -300,7 +299,7 @@ export function ProductView({product, related = [], more = [], onSubmitReview}) 
     '@type': 'Product',
     name: product.title,
     description: product.description || '',
-    image: product.images?.map((image) => image.url) ?? [],
+    image: product.images?.map((image) => image.url).filter(Boolean) ?? [],
     brand: product.vendor ? {'@type': 'Brand', name: product.vendor} : undefined,
     offers: product.price
       ? {
@@ -338,7 +337,7 @@ export function ProductView({product, related = [], more = [], onSubmitReview}) 
       />
 
       {/* Breadcrumb */}
-      <div className="mx-auto w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] py-4 sm:py-6">
+      <div className="mx-auto w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] py-3 sm:py-4">
         <nav aria-label="Breadcrumb" className="flex min-w-0 items-center gap-2 overflow-hidden whitespace-nowrap text-[.67rem] uppercase tracking-[.1em] text-[var(--color-muted)] sm:text-[.72rem]">
           <a href="/" className="shrink-0 transition hover:text-[var(--color-ink)]">Home</a>
           <span>/</span>
@@ -353,44 +352,62 @@ export function ProductView({product, related = [], more = [], onSubmitReview}) 
       </div>
 
       {/* Main commerce area */}
-      <section className="mx-auto grid w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] grid-cols-1 items-start gap-10 pb-16 sm:gap-14 sm:pb-24 lg:grid-cols-[minmax(0,1.42fr)_minmax(390px,.58fr)] lg:gap-[clamp(3rem,6vw,7rem)] lg:pb-28">
-        <ProductGallery images={product.images} title={product.title} />
+      <section className="mx-auto grid w-[calc(100%-2*var(--gutter))] max-w-[var(--container-wide)] grid-cols-1 items-start gap-6 pb-12 sm:gap-8 sm:pb-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-[clamp(2rem,4vw,4rem)] lg:pb-20">
+        <div className="min-w-0">
+          <ProductGallery images={product.images} title={product.title} />
 
-        <aside className="min-w-0 lg:sticky lg:top-[6.5rem]">
-          <div className="border border-[var(--color-line)] bg-[var(--color-surface)] p-6 sm:p-8 lg:p-9">
+          {/* Extra info under the image */}
+          <div className="mt-5 space-y-6 border border-[var(--color-line)] bg-[var(--color-surface)] p-5 sm:p-6 lg:p-7">
+            {product.description && (
+              <div>
+                <h2 className="m-0 flex items-center gap-3 text-[.74rem] font-bold uppercase tracking-[.18em] text-[var(--color-ink)]">
+                  <span aria-hidden="true" className="h-px w-8 bg-emerald-600" />
+                  About this piece
+                </h2>
+                <p className="mt-3 text-[.95rem] leading-7 text-[var(--color-ink)]/85">
+                  {product.description}
+                </p>
+              </div>
+            )}
+
+            {Array.isArray(content.highlights) && content.highlights.some((h) => h?.title) && (
+              <ul className="m-0 grid list-none grid-cols-1 gap-x-6 gap-y-2 p-0 sm:grid-cols-2">
+                {content.highlights.filter((h) => h?.title).slice(0, 4).map((h, i) => (
+                  <li key={`${h.title}-${i}`} className="flex items-start gap-2.5 text-[.88rem] font-medium text-[var(--color-ink)]">
+                    <span aria-hidden="true" className="mt-[.5rem] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-700" />
+                    {h.title}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <ProductMeta product={product} />
+            <ProductTags product={product} />
+          </div>
+        </div>
+
+        <aside className="min-w-0 lg:[@media(min-height:800px)]:sticky lg:[@media(min-height:800px)]:top-[6.5rem]">
+          <div className="border border-[var(--color-line)] bg-[var(--color-surface)] p-5 sm:p-6 lg:p-7">
             {product.vendor && (
               <p className="m-0 text-[.68rem] font-semibold uppercase tracking-[.2em] text-[var(--green-700)] sm:text-[.72rem]">
                 {product.vendor}
               </p>
             )}
 
-            <h1 className="mt-4 max-w-[13ch] font-display text-[clamp(3rem,5vw,5.6rem)] font-medium leading-[.88] tracking-[-.045em]">
+            <h1 className="mt-3 max-w-[20ch] font-display text-[clamp(2rem,3vw,3rem)] font-medium leading-[1.05] tracking-[-.03em]">
               {product.title}
             </h1>
 
-            <div className="mt-5">
+            <div className="mt-3">
               <RatingSummary reviews={reviews} />
             </div>
 
-            {product.description && (
-              <p className="mt-6 max-w-[52ch] text-[.96rem] leading-8 text-[var(--color-muted)] sm:text-[1.02rem] sm:leading-8">
-                {product.description}
-              </p>
-            )}
+            <div className="my-5 border-t border-[var(--color-line)]" />
 
-            <div className="my-7 border-t border-[var(--color-line)]" />
-
-            <div className="mt-7">
+            <div className="mt-5">
               <ProductForm key={product.id} product={product} showPrice />
             </div>
 
-            <div className="mt-8">
-              <ProductMeta product={product} />
-            </div>
-
-            <div className="mt-5">
-              <ProductTags product={product} />
-            </div>
           </div>
         </aside>
       </section>
